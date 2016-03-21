@@ -1,0 +1,17 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "resume project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Peter John Manuel",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt-contrib-copy": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-responsive": "^2.1.0"
+  }
+}
