@@ -180,30 +180,19 @@ education.display = function() {
         var formattedHTMLschoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
         var formattedHTMLschoolMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
         var formattedHTMLpicture = HTMLschoolPicture.replace("%data%", education.schools[school].schoolPic);
-
         var finalFormattedHTMLeducation = formattedHTMLschoolName + formattedHTMLschoolDegree;
         
-        
-        
-        
-        var HTMLschoolImageColumn = '<div class="col-xs-hidden col-sm-hidden col-md-1"></div>';
-        //var HTMLschoolInformationColumn = '<div class="col-xs-11 col-sm-11 col-md-11"></div>';
-        
-        //$(HTMLschoolInformationColumn)//.append(finalFormattedHTMLeducation, formattedHTMLschoolDates, formattedHTMLschoolLocation, formattedHTMLschoolMajor);
-
-        console.log(HTMLschoolInformationColumn);
-        $(HTMLrow).append("<p> Hello computer </p>" +  HTMLschoolInformationColumn);
-        
-        console.log(HTMLrow);
-
 
         $(".education-entry:last").append(HTMLrow);
-        //$(HTMLrow).append(HTMLschoolImageColumn ,HTMLschoolInformationColumn, HTMLrow); 
-
-        //$("#school-img-col").append(formattedHTMLpicture);
-        // $("#school-info-col").append(finalFormattedHTMLeducation, formattedHTMLschoolDates, formattedHTMLschoolLocation, formattedHTMLschoolMajor);
-
-        //$(".education-entry:last").append(HTMLrow);// .append($(HTMLrow).append(HTMLschoolImageColumn, HTMLschoolInformationColumn));
+        
+        
+        //$(".school-image").append(formattedHTMLpicture);
+        $(".school-information").append(finalFormattedHTMLeducation, formattedHTMLschoolDates, formattedHTMLschoolLocation, formattedHTMLschoolMajor);
+        
+        $(".row:last").append(formattedHTMLpicture , HTMLschoolInformationColumn);
+        
+        $(".row:last > .school-image").append(HTMLschoolImageColumn);
+        
     }
 
 }

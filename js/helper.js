@@ -41,8 +41,8 @@ var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em><br>Major: %data%</em>';
 var HTMLschoolPicture = '<img src="%data%" class="school-picture " />';
 
-var HTMLschoolImageColumn = '<div class="col-xs-hidden col-sm-hidden col-md-1"></div>';
-var HTMLschoolInformationColumn = '<div class="col-xs-11 col-sm-11 col-md-11"></div>';
+var HTMLschoolImageColumn = '<div class="col-xs-hidden col-sm-hidden col-md-1 school-image"></div>';
+var HTMLschoolInformationColumn = '<div class="col-xs-11 col-sm-11 col-md-11 school-information"></div>';
 
 var HTMLonlineClasses = '<h3>Online Classes</h3>';
 var HTMLonlineTitle = '<a href="#">%data%';
