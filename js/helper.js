@@ -23,11 +23,17 @@ var HTMLworkTitle = ' - %data%</a>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p><br>%data%</p>';
+var HTMLworkPicture = '<img class="school-picture" src="%data%">';
+
+var HTMLworkImageColumn = '<div class="hidden-xs hidden-sm col-md-1 work-image"></div>';
+var HTMLworkInformationColumn = '<div class="col-xs-12 col-sm-12 col-md-11 work-info"></div>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
 var HTMLprojectTitle = '<a href="#">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
+
+
 
 
 

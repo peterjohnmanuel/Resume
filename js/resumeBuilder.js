@@ -21,15 +21,16 @@ var work = {
             "title": "Intership",
             "dates": "July 2012 - December 2012",
             "location": "Bloubergstrand, Cape Town, South Africa",
-            "workPic": "images/education/oudemolen_logo.png",
+            "workPic": "images/work/PCT_logo.png",
             "description": "I started my career at PCT as an intern during the work integrated learning program at CPUT. During this time I was on a six month contract to learn about industry and after the six month contract was promoted to junior developer. PCT uses a scrum/agile methodology integrated with a Jira tracking and ticketing system to monitor progress. During my intership at PCT I was involved with the following projects:",
+            "projects": []
         },
         {
             "employer": "Process Computer Technology",
             "title": "Junior Developer",
             "dates": "January 2013 - November 2015",
             "location": "Bloubergstrand, Cape Town, South Africa",
-            "workPic": "images/education/oudemolen_logo.png",
+            "workPic": "images/work/PCT_logo.png",
             "description": "After my 6 month contract as an intern at PCT, I was employed as a Junior Developer and was involved with the following projects:",
             "projects": []
         },
@@ -38,8 +39,9 @@ var work = {
             "title": "Software Developer",
             "dates": "December 2015 - Current ",
             "location": "Pinelands, Cape Town, South Africa",
-            "workPic": "images/education/oudemolen_logo.png",
-            "description": "description"
+            "workPic": "images/work/redPanda_logo.png",
+            "description": "description",
+            "projects": []
         }
     ],
 };
@@ -125,18 +127,22 @@ bio.display = function() {
 
 work.display = function() {
     for (job in work.jobs) {
-        $("#workExperience").append(HTMLworkStart);
-
+        
         var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
         var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
+        var formattedPicture = HTMLworkPicture.replace("%data%", work.jobs[job].workPic);
         var formattedEmployerTitle = formattedEmployer + formattedTitle;
-        $(".work-entry:last").append(formattedEmployerTitle);
-
         var formattedDate = HTMLworkDates.replace("%data%", work.jobs[job].dates);
-        $(".work-entry:last").append(formattedDate);
-
         var fomattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
-        $(".work-entry:last").append(fomattedDescription);
+ 
+        HTMLworkImageColumn.replace("%data%", formattedPicture);
+
+        $("#workExperience").append(HTMLworkStart);        
+        $(".work-entry:last").append(HTMLrow);        
+        $(".work-entry > .row:last").append(HTMLworkImageColumn);
+        $(".work-entry > .row:last").append(HTMLworkInformationColumn);
+        $(".work-entry > .row > .work-image:last").append(formattedPicture);
+        $(".work-entry > .row > .work-info:last").append(formattedEmployerTitle, formattedDate, fomattedDescription);
     }
 }
 
