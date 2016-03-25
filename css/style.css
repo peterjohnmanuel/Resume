@@ -18,6 +18,7 @@ h6 {
   overflow: auto;
 }
 
+.school-education-entry,
 .education-entry,
 .work-entry,
 .project-entry {
@@ -179,7 +180,7 @@ span {
 .school-picture
 {
     max-height: 100px;
-    max-width: 120px;
+    max-width: 100px;
 }
 
 footer
@@ -198,6 +199,22 @@ footer > .container > p
 {
     margin: 20px 0;
     color :white; 
+}
+
+.heading-hr{
+    position: relative;
+}
+
+.heading-hr:after
+{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.5em;
+    border-top: 1px solid black;
+    z-index: -1;
 }
 
 

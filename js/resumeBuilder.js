@@ -51,7 +51,7 @@ var education = {
             "qualification": "National Senior Certificate",
             "year": "2009",
             "major": "Electrical Technology",
-            "schoolPic": "images/education/oudemolen_logo.jpg"
+            "schoolPic": "images/education/oudemolen_logo.png"
         },
         {
             "name": "Cape Peninsula University of Technology",
@@ -59,7 +59,7 @@ var education = {
             "qualification": "NDip IT: Nation Diploma Information Technology",
             "year": "2012",
             "major": "Software Development",
-            "schoolPic": "images/education/CPUT_logo.jpg"
+            "schoolPic": "images/education/CPUT_logo.png"
         },
         {
             "name": "Cape Peninsula University of Technology",
@@ -67,7 +67,7 @@ var education = {
             "qualification": "BTech IT: Baccules Technology Information Technology",
             "year": "2014",
             "major": "Software Development",
-            "schoolPic": "images/education/CPUT_logo.jpg"
+            "schoolPic": "images/education/CPUT_logo.png"
         }
     ],
 
@@ -120,8 +120,6 @@ bio.display = function() {
     }
 }
 
-
-
 work.display = function() {
     for (job in work.jobs) {
         $("#workExperience").append(HTMLworkStart);
@@ -172,8 +170,6 @@ education.display = function() {
 
     for (school in education.schools) {
 
-        $("#education").append(HTMLschoolStart);
-
         var formattedHTMLschoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
         var formattedHTMLschoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].qualification);
         var formattedHTMLschoolDates = HTMLschoolDates.replace("%data%", education.schools[school].year);
@@ -181,20 +177,19 @@ education.display = function() {
         var formattedHTMLschoolMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
         var formattedHTMLpicture = HTMLschoolPicture.replace("%data%", education.schools[school].schoolPic);
         var finalFormattedHTMLeducation = formattedHTMLschoolName + formattedHTMLschoolDegree;
-        
 
-        $(".education-entry:last").append(HTMLrow);
-        
-        
-        //$(".school-image").append(formattedHTMLpicture);
-        $(".school-information").append(finalFormattedHTMLeducation, formattedHTMLschoolDates, formattedHTMLschoolLocation, formattedHTMLschoolMajor);
-        
-        $(".row:last").append(formattedHTMLpicture , HTMLschoolInformationColumn);
-        
-        $(".row:last > .school-image").append(HTMLschoolImageColumn);
-        
+        var formattedHTMLschoolImageColumn = HTMLschoolImageColumn.replace("%data%", formattedHTMLpicture);
+        var formattedHTMLschoolInformationColumn = HTMLschoolInformationColumn.replace("%data%", finalFormattedHTMLeducation);
+
+        $("#school-education").append(HTMLschoolStart);
+        $(".school-education-entry:last").append(HTMLrow);
+
+
+        $(".school-education-entry > .row:last").append(formattedHTMLschoolImageColumn);
+        $(".school-education-entry > .row:last").append(formattedHTMLschoolInformationColumn);
+        $(".school-education-entry > .row > .school-information:last").append(formattedHTMLschoolDates, formattedHTMLschoolLocation, formattedHTMLschoolMajor);
+
     }
-
 }
 
 bio.display();

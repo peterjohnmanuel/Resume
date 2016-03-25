@@ -33,7 +33,7 @@ var HTMLprojectDescription = '<p><br>%data%</p>';
 
 var HTMLprojectImage = '<img class="project-thumbnail" src="%data%">';
 
-var HTMLschoolStart = '<div class="education-entry"></div>';
+var HTMLschoolStart = '<div class="school-education-entry"></div>';
 var HTMLschoolName = '<a href="#">%data%';
 var HTMLschoolDegree = ' -- %data%</a>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
@@ -41,8 +41,8 @@ var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em><br>Major: %data%</em>';
 var HTMLschoolPicture = '<img src="%data%" class="school-picture " />';
 
-var HTMLschoolImageColumn = '<div class="col-xs-hidden col-sm-hidden col-md-1 school-image"></div>';
-var HTMLschoolInformationColumn = '<div class="col-xs-11 col-sm-11 col-md-11 school-information"></div>';
+var HTMLschoolImageColumn = '<div class="hidden-xs hidden-sm col-md-1 school-image">%data%</div>';
+var HTMLschoolInformationColumn = '<div class="col-xs-12 col-sm-12 col-md-11 school-information">%data%</div>';
 
 var HTMLonlineClasses = '<h3>Online Classes</h3>';
 var HTMLonlineTitle = '<a href="#">%data%';
@@ -70,21 +70,21 @@ $(document).ready(function() {
 /*
 The next few lines about clicks are for the Collecting Click Locations quiz in Lesson 2.
 */
-clickLocations = [];
+// clickLocations = [];
 
-function logClicks(x,y) {
-  clickLocations.push(
-    {
-      x: x,
-      y: y
-    }
-  );
-  console.log('x location: ' + x + '; y location: ' + y);
-}
+// function logClicks(x,y) {
+//   clickLocations.push(
+//     {
+//       x: x,
+//       y: y
+//     }
+//   );
+//   console.log('x location: ' + x + '; y location: ' + y);
+// }
 
-$(document).click(function(loc) {
-  // your code goes here!
-});
+// $(document).click(function(loc) {
+//   // your code goes here!
+// });
 
 
 
@@ -93,6 +93,8 @@ This is the fun part. Here's where we generate the custom Google Map for the web
 See the documentation below for more details.
 https://developers.google.com/maps/documentation/javascript/reference
 */
+
+
 var map;    // declares a global map variable
 
 
@@ -111,7 +113,7 @@ function initializeMap() {
   For the map to be displayed, the googleMap var must be
   appended to #mapDiv in resumeBuilder.js. 
   */
-  map = new google.maps.Map(document.querySelector('#map'), mapOptions);
+  //map = new google.maps.Map(document.querySelector('#map'), mapOptions);
 
 
   /*
