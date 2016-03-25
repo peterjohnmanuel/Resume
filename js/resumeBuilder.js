@@ -21,6 +21,7 @@ var work = {
             "title": "Intership",
             "dates": "July 2012 - December 2012",
             "location": "Bloubergstrand, Cape Town, South Africa",
+            "workPic": "images/education/oudemolen_logo.png",
             "description": "I started my career at PCT as an intern during the work integrated learning program at CPUT. During this time I was on a six month contract to learn about industry and after the six month contract was promoted to junior developer. PCT uses a scrum/agile methodology integrated with a Jira tracking and ticketing system to monitor progress. During my intership at PCT I was involved with the following projects:",
         },
         {
@@ -28,6 +29,7 @@ var work = {
             "title": "Junior Developer",
             "dates": "January 2013 - November 2015",
             "location": "Bloubergstrand, Cape Town, South Africa",
+            "workPic": "images/education/oudemolen_logo.png",
             "description": "After my 6 month contract as an intern at PCT, I was employed as a Junior Developer and was involved with the following projects:",
             "projects": []
         },
@@ -36,6 +38,7 @@ var work = {
             "title": "Software Developer",
             "dates": "December 2015 - Current ",
             "location": "Pinelands, Cape Town, South Africa",
+            "workPic": "images/education/oudemolen_logo.png",
             "description": "description"
         }
     ],
