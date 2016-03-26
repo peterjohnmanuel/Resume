@@ -216,6 +216,14 @@ footer > .container > p
     z-index: -1;
 }
 
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  /*padding-bottom: 5%;*/
+  
+  margin-bottom: 5%;
+}
+
 
 /* Media queries to handle various device widths */
 
@@ -252,7 +260,9 @@ footer > .container > p
 #mapDiv {
   height: 400px;
   width: 100%;
-  padding-bottom: 5%;
+  /*padding-bottom: 5%;*/
+  
+  margin-bottom: 5%;
 }
 
 @media only screen and (min-width: 750px) {

@@ -78,24 +78,50 @@ var education = {
 
     "onlineCourses": [
         {
-            "title": "Front End Developer Nano Degree",
-            "school": "Online",
-            "Year": "2016",
+            "title": "NetIQ Identity Manager 4: Administration (Course 3109)",
+            "school": "NetIQ",
+            "year": "2015",
+            "img" : "images/education/udacity_logo.png",
             "url": "URL: Here"
-        }
+        },
+
+        {
+            "title": "Front End Developer Nano Degree",
+            "school": "Udacity",
+            "year": "2016",
+            "img" : "images/education/netiq_logo.png",
+            "url": "URL: Here"
+        },
+
     ]
 };
 
 
 // Projects
 var projects = {
-    "projects": [{
+    "projects": [
+        {
         "title": "Portfolio",
         "dates": "2016",
         "description": "Built a portfolio to showcase projects done so far.",
-        "images": ["images/projects/Featured_Work.png", "images/projects/Main_Portfolio.png", "images/projects/Project_Description.png"]
-
-    }]
+        "images": [
+            "images/projects/Featured_Work.png", 
+            "images/projects/Main_Portfolio.png", 
+            "images/projects/Project_Description.png"
+            ]
+        },
+        {
+        "title": "Portfolio",
+        "dates": "2016",
+        "description": "Built a portfolio to showcase projects done so far.",
+        "images": [
+            "images/projects/Featured_Work.png", 
+            "images/projects/Main_Portfolio.png", 
+            "images/projects/Project_Description.png"
+            ]
+        }        
+    
+    ]
 
 }
 
@@ -127,18 +153,18 @@ bio.display = function() {
 
 work.display = function() {
     for (job in work.jobs) {
-        
+
         var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
         var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
         var formattedPicture = HTMLworkPicture.replace("%data%", work.jobs[job].workPic);
         var formattedEmployerTitle = formattedEmployer + formattedTitle;
         var formattedDate = HTMLworkDates.replace("%data%", work.jobs[job].dates);
         var fomattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
- 
+
         HTMLworkImageColumn.replace("%data%", formattedPicture);
 
-        $("#workExperience").append(HTMLworkStart);        
-        $(".work-entry:last").append(HTMLrow);        
+        $("#workExperience").append(HTMLworkStart);
+        $(".work-entry:last").append(HTMLrow);
         $(".work-entry > .row:last").append(HTMLworkImageColumn);
         $(".work-entry > .row:last").append(HTMLworkInformationColumn);
         $(".work-entry > .row > .work-image:last").append(formattedPicture);
@@ -199,6 +225,28 @@ education.display = function() {
         $(".school-education-entry > .row > .school-information:last").append(formattedHTMLschoolDates, formattedHTMLschoolLocation, formattedHTMLschoolMajor);
 
     }
+
+    for (course in education.onlineCourses) {
+
+        var formattedHTMLschoolName = HTMLschoolName.replace("%data%", education.onlineCourses[course].school);
+        var formattedHTMLschoolDegree = HTMLschoolDegree.replace("%data%", education.onlineCourses[course].title);
+        var formattedHTMLschoolDates = HTMLschoolDates.replace("%data%", education.onlineCourses[course].year);
+        var formattedHTMLpicture = HTMLschoolPicture.replace("%data%", education.onlineCourses[course].img);
+        var finalFormattedHTMLeducation = formattedHTMLschoolName + formattedHTMLschoolDegree;
+
+        var formattedHTMLschoolImageColumn = HTMLschoolImageColumn.replace("%data%", formattedHTMLpicture);
+        var formattedHTMLschoolInformationColumn = HTMLschoolInformationColumn.replace("%data%", finalFormattedHTMLeducation);
+
+        $("#school-online").append(HTMLschoolStart);
+        $(".school-education-entry:last").append(HTMLrow);
+
+
+        $(".school-education-entry > .row:last").append(formattedHTMLschoolImageColumn);
+        $(".school-education-entry > .row:last").append(formattedHTMLschoolInformationColumn);
+        $(".school-education-entry > .row > .school-information:last").append(formattedHTMLschoolDates, formattedHTMLschoolLocation);
+
+    }
+
 }
 
 bio.display();
