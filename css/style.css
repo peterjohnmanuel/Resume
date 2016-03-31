@@ -54,15 +54,6 @@ h4 {
   line-height: 17px;
 }
 
-h2,
-h3,
-h4,
-h5 {
-  padding:10px 5%;
-
-}
-
-
 .date-text {
   font-style: italic;
   font-size: 14px;
@@ -129,8 +120,25 @@ a {
 }
 
 /* TODO: Replace with image later */
-#header {
+/*#header {
   background-color: #484848;
+}*/
+
+.header
+{
+    background-color: #3BB9FF;
+    height: 200px;
+}
+
+.header-main
+{
+    margin-top: 75px; 
+}
+
+#header-info
+{
+    padding-top: 30px;                        
+
 }
 
 .flex-box {
@@ -152,9 +160,14 @@ ul {
 
 .biopic {
   float: left;
-  padding: 10px;
-  width: 200px;
+  padding-left: 10px;
+  /*//margin-top: 75px;*/
+  width: 300px;
   display: none;
+      /*-moz-border-radius: 30px;
+    border-radius: 200px;*/
+    border-radius: 50%;
+
 }
 
 img {
@@ -216,6 +229,15 @@ footer > .container > p
     z-index: -1;
 }
 
+.hr-blue {
+    border: none;
+    height: 3px;
+    margin-top: 0; 
+    /* Set the hr color */
+    background-color: #3BB9FF; /* Modern Browsers */
+    width: 90%;
+}
+
 #mapDiv {
   height: 400px;
   width: 100%;
@@ -224,6 +246,7 @@ footer > .container > p
   margin-bottom: 5%;
 }
 
+ 
 
 /* Media queries to handle various device widths */
 

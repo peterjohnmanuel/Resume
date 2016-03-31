@@ -4,6 +4,7 @@ var bio = {
     "role": "Software Developer",
     "contacts": {
         "email": "peterjohn.manuel@yahoo.com",
+        "skype": "peterjohnmanuel",
         "github": "https://github.com/peterjohnmanuel",
         "location": "Cape Town, South Africa"
     },
@@ -111,9 +112,9 @@ var projects = {
             ]
         },
         {
-        "title": "Portfolio",
+        "title": "Resume",
         "dates": "2016",
-        "description": "Built a portfolio to showcase projects done so far.",
+        "description": "Built a resume to showcase skills through out career so far.",
         "images": [
             "images/projects/Featured_Work.png", 
             "images/projects/Main_Portfolio.png", 
@@ -139,13 +140,16 @@ bio.display = function() {
         var formattedHTMLgithub = HTMLgithub.replace("%data%", bio.contacts.github);
         var formattedHTMLlocation = HTMLlocation.replace("%data%", bio.contacts.location);
         var formattedHTMLpicture = HTMLbioPic.replace("%data%", bio.bioPic);
+        var formattedHTMLskype = HTMLskype.replace("%data%", bio.contacts.skype);
         var formattedHTMLwelomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 
-        $("#header").prepend(formattedHTMLheaderRole);
-        $("#header").prepend(formattedHTMLheaderName);
-        $("#header").append(formattedHTMLpicture);
-        $("#header").append(formattedHTMLwelomeMessage);
+        $("#header-info").prepend(formattedHTMLheaderRole);
+        $("#header-info").prepend(formattedHTMLheaderName);
+        $("#welcome-info").append(formattedHTMLpicture);
+        $("#welcome-msg").append(formattedHTMLwelomeMessage);
+        
         $("#topContacts").append(formattedHTMLemail);
+        $("#topContacts").append(formattedHTMLskype);
         $("#topContacts").append(formattedHTMLgithub);
         $("#topContacts").append(formattedHTMLlocation);
     }

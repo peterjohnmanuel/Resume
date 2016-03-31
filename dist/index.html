@@ -11,16 +11,49 @@
 
 <body>
     <div id="main">
-        
-        <div id="header" class="center-content clear-fix">
-            <ul id="topContacts" class="flex-box"></ul>
-        </div>
+
+        <section class="header">
+
+            <section class="container-fluid">
+                <div id="header" class="container">
+                    <section class="row header-main">
+
+                        <section id="welcome-info" class="col-sm-6 col-md-4">
+                        </section>
+
+                        <section id="header-info" class="col-md-8">
+                        </section>
+
+
+                    </section>
+
+                    <section class="row">
+
+                        <section class="col-md-6">
+                          <h3>Contact Information: </h2>
+                            <ul id="welcome-msg">
+                            </ul>                            
+                        </section>
+
+                        <section class="col-md-6">
+                            <h3><i class="fa fa-phone-square"></i> Contact Information: </h2>
+                            <ul id="topContacts">
+                            </ul>
+                        </section>
+
+                    </section>                    
+                </div>
+            </section>
+        </section>
+
+<div class="container"> 
         <!--<div style="clear: both;"></div>-->
         <div id="workExperience" class="gray">
-            <h2 class="heading-hr">
+            <h2>
                 <i class="fa fa-briefcase"></i>
-                Work Experience
+                Work Experience :                 
              </h2>
+            <hr class="hr-blue" />
         </div>
         <div id="projects">
             <h2>
@@ -35,95 +68,50 @@
                 Education
             </h2>
             <hr />
-            
+
             <section id="school-education">
                 <h3>
                     <i class="fa fa-university"> </i> 
                     School/University
                 </h3>
-            </section>
-            
-            <!--<section id="school-online">
-                <h3>
+                        </section>
+
+                        <section id="school-online">
+                            <h3>
                     <i class="fa fa-book"> </i> 
                     Online Courses
                 </h3>
-            </section>-->
-            
-        </div>
-        <!--<div id="mapDiv">
-            <h2>
+                        </section>
+
+                </div>
+                <div id="mapDiv">
+                    <h2>
                 <i class="fa fa-map-marker"></i> 
                 Where I've Lived, Studied and Worked
             </h2>
-        </div>-->
-        <!--<div id="lets-connect" class="dark-gray">
+                </div>
+                <!--<div id="lets-connect" class="dark-gray">
             <h2 class="orange center-text">Let's Connect</h2>
             <ul id="footerContacts" class="flex-box">
             </ul>
         </div>-->
 
-       <!--<div class="education-entry">
+    </div>
 
-            <div class="row">
-                <div class="col-xs-hidden col-sm-hidden col-md-1">
-                    <img src="images/education/CPUT_logo.jpg" class="school-picture">
-                </div>
-                <div class="col-md-11">
-                    <a href="#">Oude Molen Technical High School -- National Senior Certificate</a>
-                    <div class="date-text">2009</div>
-                    <div class="location-text">Pinelands, Cape Town, South Africa, </div>
-                    <em><br>Major: Electrical Technology</em>
-                </div>
-            </div>
+    <footer>
+        <div class="container">
+            <p class="text-center">
+                Peter John Manuel Online Resume
+            </p>
         </div>
-        
-        <div class="education-entry">
-
-            <div class="row">
-                <div class="col-xs-hidden col-sm-hidden col-md-1">
-                    <img src="images/education/oudemolen_logo.jpg" class="school-picture">
-                </div>
-                <div class="col-md-11">
-                    <a href="#">Oude Molen Technical High School -- National Senior Certificate</a>
-                    <div class="date-text">2009</div>
-                    <div class="location-text">Pinelands, Cape Town, South Africa, </div>
-                    <em><br>Major: Electrical Technology</em>
-                </div>
-            </div>
-        </div>       
-        
-        <div class="education-entry">
-
-            <div class="row">
-                <div class="col-xs-hidden col-sm-hidden col-md-1">
-                    <img src="images/education/CPUT_logo.jpg" class="school-picture">
-                </div>
-                <div class="col-md-11">
-                    <a href="#">Oude Molen Technical High School -- National Senior Certificate</a>
-                    <div class="date-text">2009</div>
-                    <div class="location-text">Pinelands, Cape Town, South Africa, </div>
-                    <em><br>Major: Electrical Technology</em>
-                </div>
-            </div>
-        </div>         -->
-
-
-
-        <footer>
-            <div class="container">
-                <p class="text-center">
-                    Peter John Manuel Online Resume
-                </p>
-            </div>
-        </footer>
+    </footer>
 
     </div>
 
 
     <script src="js/main.min.js"></script>
 
-    <!--<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>-->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
 
     <script type="text/javascript">
         if(document.getElementsByClassName('flex-item').length === 0) {
