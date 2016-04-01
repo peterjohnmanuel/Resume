@@ -22,12 +22,13 @@ h6 {
 .education-entry,
 .work-entry,
 .project-entry {
-  padding: 0 5%;
+  padding: 5 0%;
+  padding-top: 15px; 
 }
 
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  /*color: #f5a623;*/
   line-height: 48px;
   display: inline;
 }
@@ -37,14 +38,16 @@ h2 {
   font-size: 24px;
   color: #999;
   line-height: 29px;
-  padding: 10px;
+  /*padding: 10px;*/
 }
 
 h3 {
   font-style: italic;
   font-size: 20px;
   color: #000;
-  line-height: 22px;
+  line-height: 22px;  
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -87,7 +90,7 @@ a {
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  color: #f3f3f3;
+  /*color: #f3f3f3;*/
   line-height: 28px;
 }
 
@@ -104,6 +107,10 @@ a {
   color: #f5ae23;
 }
 
+/*.white-text {
+  color: #ffffff;
+}*/
+
 .white-text {
   font-weight: bold;
   color: #fff;
@@ -119,20 +126,15 @@ a {
   background-color: #4a4a4a;
 }
 
-/* TODO: Replace with image later */
-/*#header {
-  background-color: #484848;
-}*/
 
 .header
 {
-    background-color: #3BB9FF;
-    height: 200px;
+    background: linear-gradient(180deg, #236b8e 40%, #ffffff 0%);
 }
 
 .header-main
 {
-    margin-top: 75px; 
+    margin-top: 40px; 
 }
 
 #header-info
@@ -174,9 +176,9 @@ img {
   padding: 10px;
 }
 
-span {
+/*span {
   padding: 5px;
-}
+}*/
 
 #lets-connect {
   text-align: center;
@@ -202,8 +204,9 @@ footer
     height: 60px;
     bottom: 0;    
     width: 100%;
-    background-color: #232323;
+    background-color: #236b8e;
     color :white;    
+    font-weight: bold;
     font-family: 'Lato', sans-serif;
 }
 
@@ -230,23 +233,46 @@ footer > .container > p
 }
 
 .hr-blue {
+    background-color: #3BB9FF;
     border: none;
-    height: 3px;
-    margin-top: 0; 
-    /* Set the hr color */
-    background-color: #3BB9FF; /* Modern Browsers */
+    height: 2px;
+    margin-top: 0;     
     width: 90%;
+}
+
+hr
+{
+    background-color: #236b8e; 
+    border: none;
+    height: 2px;
+    margin-top: 0;     
+    width: 90%;
+}
+
+.section-heading
+{
+    color: #236b8e;
+}
+
+#workExperience{
+    margin-top: 10 px; 
 }
 
 #mapDiv {
   height: 400px;
-  width: 100%;
-  /*padding-bottom: 5%;*/
-  
-  margin-bottom: 5%;
+  width: 100%;  
+  margin-bottom: 100px;
 }
 
- 
+dt {
+  float: left;
+  width: 15%;
+}
+
+dd {
+  float: left;
+  width: 85%;
+}
 
 /* Media queries to handle various device widths */
 
@@ -285,7 +311,7 @@ footer > .container > p
   width: 100%;
   /*padding-bottom: 5%;*/
   
-  margin-bottom: 5%;
+  /*margin-bottom: 5%;*/
 }
 
 @media only screen and (min-width: 750px) {

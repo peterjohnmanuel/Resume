@@ -1,16 +1,30 @@
 var HTMLrow = '<div class="row"></div>';
 
-var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<h3>%data%</h3>';
+var HTMLheaderName = '<h1 id="name" class="white-text">%data%</h1>';
+var HTMLheaderRole = '<h3 class="white-text">%data%</h3>';
 
-var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><span class="orange-text"><span class="fa fa-mail"> </span>mobile</span><span class="white-text">%data%</span></li>';
-var HTMLemail = '<li class="flex-item"><span class="orange-text"><i class="fa fa-yahoo"></i> email</span><span class="white-text">%data%</span></li>';
-var HTMLtwitter = '<li class="flex-item"><span class="orange-text">twitter</span><span class="white-text">%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><span class="orange-text"><i class="fa fa-github-square"></i> github</span><span class="white-text">%data%</span></li>';
-var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span class="white-text">%data%</span></li>';
-var HTMLlocation = '<li class="flex-item"><span class="orange-text"><i class="fa fa-map-o"></i> location</span><span class="white-text">%data%</span></li>';
-var HTMLskype = '<li class="flex-item"><span class="orange-text"><i class="fa fa-skype"></i> skype</span><span class="white-text">%data%</span></li>';
+var HTMLcontactGeneric = '<li class="flex-item"><span class="contact-text">%contact%</span><span>%data%</span></li>';
+var HTMLmobile = '<li class="flex-item"><span class="contact-text"><span class="fa fa-mail"> </span>mobile</span><span>%data%</span></li>';
+//var HTMLemail = '<li class="flex-item"><span class="contact-text"><i class="fa fa-yahoo"></i> email</span><span>%data%</span></li>';
+var HTMLtwitter = '<li class="flex-item"><span class="contact-text">twitter</span><span>%data%</span></li>';
+//var HTMLgithub = '<li class="flex-item"><span class="contact-text"><i class="fa fa-github-square"></i> github</span><span>%data%</span></li>';
+var HTMLblog = '<li class="flex-item"><span class="contact-text">blog</span><span>%data%</span></li>';
+//var HTMLlocation = '<li class="flex-item"><span class="contact-text"><i class="fa fa-map-o"></i> location</span><span>%data%</span></li>';
+//var HTMLskype = '<li class="flex-item"><span class="contact-text"><i class="fa fa-skype"></i> skype</span><span>%data%</span></li>';
+
+var HTMLemail = '<dt><i class="fa fa-yahoo"></i><span class="contact-text"> Yahoo</span></dt><dd> <span>%data%</span></dd>';
+var HTMLskype = '<dt><i class="fa fa-skype"></i><span class="contact-text"> Skype</span></dt><dd> <span>%data%</span></dd>';
+var HTMLgithub = '<dt><i class="fa fa-github-square"></i><span class="contact-text"> Github</span></dt><dd> <span>%data%</span></dd>';
+var HTMLlocation = '<dt><i class="fa fa-map-o"></i><span class="contact-text"> Location</span></dt><dd> <span>%data%</span></dd>';
+
+// <dt>Mercury</dt>
+// <dd>Mercury (0.4 AU from the Sun) is the closest planet to the Sun and the smallest planet.</dd>
+// <dt>Venus</dt>
+// <dd>Venus (0.7 AU) is close in size to Earth, (0.815 Earth masses) and like Earth, has a thick silicate mantle around an iron core.</dd>
+// <dt>Earth</dt>
+// <dd>Earth (1 AU) is the largest and densest of the inner planets, the only one known to have current geological activity.</dd>
+
+
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
@@ -26,8 +40,8 @@ var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p><br>%data%</p>';
 var HTMLworkPicture = '<img class="school-picture" src="%data%">';
 
-var HTMLworkImageColumn = '<div class="hidden-xs hidden-sm col-md-1 work-image"></div>';
-var HTMLworkInformationColumn = '<div class="col-xs-12 col-sm-12 col-md-11 work-info"></div>';
+//var HTMLworkImageColumn = '<div class="hidden-xs hidden-sm col-md-1 work-image"></div>';
+var HTMLworkInformationColumn = '<article class="col-xs-12 col-sm-12 col-md-12 work-info"></article>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
 var HTMLprojectTitle = '<a href="#">%data%</a>';
@@ -46,10 +60,7 @@ var HTMLschoolDegree = ' - %data%</a>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em><br>Major: %data%</em>';
-var HTMLschoolPicture = '<img src="%data%" class="school-picture " />';
-
-var HTMLschoolImageColumn = '<div class="hidden-xs hidden-sm col-md-1 school-image">%data%</div>';
-var HTMLschoolInformationColumn = '<div class="col-xs-12 col-sm-12 col-md-11 school-information">%data%</div>';
+var HTMLschoolInformationColumn = '<article class="col-xs-12 col-sm-12 col-md-12 school-information">%data%</article>';
 
 var HTMLonlineClasses = '<h3>Online Classes</h3>';
 var HTMLonlineTitle = '<a href="#">%data%';
@@ -201,8 +212,6 @@ function initializeMap() {
   */
   function callback(results, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
-        
-        console.log(results[0]);
       createMapMarker(results[0]);
     }
   }

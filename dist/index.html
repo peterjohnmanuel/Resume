@@ -30,7 +30,7 @@
                     <section class="row">
 
                         <section class="col-md-6">
-                          <h3>Contact Information: </h2>
+                            <h3>Contact Information: </h2>
                             <ul id="welcome-msg">
                             </ul>                            
                         </section>
@@ -46,49 +46,85 @@
             </section>
         </section>
 
-<div class="container"> 
-        <!--<div style="clear: both;"></div>-->
-        <div id="workExperience" class="gray">
-            <h2>
-                <i class="fa fa-briefcase"></i>
-                Work Experience :                 
-             </h2>
-            <hr class="hr-blue" />
-        </div>
-        <div id="projects">
-            <h2>
-                <i class="fa fa-code"></i>
-                Projects
-            </h2>
-        </div>
-        <div id="education" class="gray">
+<section class="container"> 
+    
+    <section id="workExperience">
+            <h3 class="section-heading">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
+                </span> 
+                Occupation Experience <hr/>
+            </h3>                
+    </section>
+    
+    
+            
+        <!--<div>
+            <h3>
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
+                </span> 
+                Occupation Experience <hr class="hr-blue" />
+            </h3>
 
-            <h2>
-                <i class="fa fa-graduation-cap"> </i> 
-                Education
-            </h2>
-            <hr />
 
-            <section id="school-education">
-                <h3>
+                            <h2>
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
+                </span> 
+                Work Experience <hr class="hr-blue" />
+            </h2>
+        </div>-->
+
+                <!--<div id="projects">
+                    <h2>
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+                </span> 
+                Projects <hr class="hr-blue" />
+            </h2>
+                </div>-->
+
+
+                <section class="education">
+
+                    <h3 class="section-heading">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                </span> 
+                Education <hr/>
+            </h3>
+
+                    <article id="school-education">
+                        <h3 class="section-heading">
                     <i class="fa fa-university"> </i> 
                     School/University
                 </h3>
-                        </section>
+                    </article>
 
-                        <section id="school-online">
-                            <h3>
+                    <article id="school-online">
+                        <h3 class="section-heading">
                     <i class="fa fa-book"> </i> 
                     Online Courses
                 </h3>
-                        </section>
+                    </article>
 
-                </div>
+                </section>
+
+
                 <div id="mapDiv">
-                    <h2>
-                <i class="fa fa-map-marker"></i> 
-                Where I've Lived, Studied and Worked
-            </h2>
+                    <h3 class="section-heading">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                        </span> 
+                        Where I've Studied and Worked <hr/>
+                    </h3>
                 </div>
                 <!--<div id="lets-connect" class="dark-gray">
             <h2 class="orange center-text">Let's Connect</h2>
@@ -96,7 +132,7 @@
             </ul>
         </div>-->
 
-    </div>
+</section>
 
     <footer>
         <div class="container">
@@ -123,9 +159,9 @@
     if(document.getElementsByClassName('work-entry').length === 0) {
       document.getElementById('workExperience').style.display = 'none';
     }
-    if(document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.display = 'none';
-    }
+    // if(document.getElementsByClassName('project-entry').length === 0) {
+    //   document.getElementById('projects').style.display = 'none';
+    // }
     // if(document.getElementsByClassName('education-entry').length === 0) {
     //   document.getElementById('education').style.display = 'none';
     // }
