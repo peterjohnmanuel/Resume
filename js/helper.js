@@ -5,26 +5,13 @@ var HTMLheaderRole = '<h3 class="white-text">%data%</h3>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="contact-text">%contact%</span><span>%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="contact-text"><span class="fa fa-mail"> </span>mobile</span><span>%data%</span></li>';
-//var HTMLemail = '<li class="flex-item"><span class="contact-text"><i class="fa fa-yahoo"></i> email</span><span>%data%</span></li>';
 var HTMLtwitter = '<li class="flex-item"><span class="contact-text">twitter</span><span>%data%</span></li>';
-//var HTMLgithub = '<li class="flex-item"><span class="contact-text"><i class="fa fa-github-square"></i> github</span><span>%data%</span></li>';
 var HTMLblog = '<li class="flex-item"><span class="contact-text">blog</span><span>%data%</span></li>';
-//var HTMLlocation = '<li class="flex-item"><span class="contact-text"><i class="fa fa-map-o"></i> location</span><span>%data%</span></li>';
-//var HTMLskype = '<li class="flex-item"><span class="contact-text"><i class="fa fa-skype"></i> skype</span><span>%data%</span></li>';
 
 var HTMLemail = '<dt><i class="fa fa-yahoo"></i><span class="contact-text"> Yahoo</span></dt><dd> <span>%data%</span></dd>';
 var HTMLskype = '<dt><i class="fa fa-skype"></i><span class="contact-text"> Skype</span></dt><dd> <span>%data%</span></dd>';
 var HTMLgithub = '<dt><i class="fa fa-github-square"></i><span class="contact-text"> Github</span></dt><dd> <span>%data%</span></dd>';
 var HTMLlocation = '<dt><i class="fa fa-map-o"></i><span class="contact-text"> Location</span></dt><dd> <span>%data%</span></dd>';
-
-// <dt>Mercury</dt>
-// <dd>Mercury (0.4 AU from the Sun) is the closest planet to the Sun and the smallest planet.</dd>
-// <dt>Venus</dt>
-// <dd>Venus (0.7 AU) is close in size to Earth, (0.815 Earth masses) and like Earth, has a thick silicate mantle around an iron core.</dd>
-// <dt>Earth</dt>
-// <dd>Earth (1 AU) is the largest and densest of the inner planets, the only one known to have current geological activity.</dd>
-
-
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';

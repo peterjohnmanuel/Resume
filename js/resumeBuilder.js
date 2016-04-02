@@ -8,7 +8,7 @@ var bio = {
         "github": "https://github.com/peterjohnmanuel",
         "location": "Cape Town, South Africa"
     },
-    "welcomeMessage": "lorem ipsum dolor sit amet etc etc etc",
+    "welcomeMessage": "Welcome to my online resume, detailing all of my experiance and education throughout my occupational career",
     "skills": ["awesomness", "delivering things", "cryogenic sleep", "saving the universe"],
     "bioPic": "images/fry.jpg"
 };
@@ -159,19 +159,14 @@ work.display = function() {
     for (job in work.jobs) {
 
         var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
-        var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
-        //var formattedPicture = HTMLworkPicture.replace("%data%", work.jobs[job].workPic);
+        var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);        
         var formattedEmployerTitle = formattedEmployer + formattedTitle;
         var formattedDate = HTMLworkDates.replace("%data%", work.jobs[job].dates);
-        var fomattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
-
-        //HTMLworkImageColumn.replace("%data%", formattedPicture);
+        var fomattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);        
 
         $("#workExperience").append(HTMLworkStart);
-        $(".work-entry:last").append(HTMLrow);
-        //$(".work-entry > .row:last").append(HTMLworkImageColumn);
-        $(".work-entry > .row:last").append(HTMLworkInformationColumn);
-        //$(".work-entry > .row > .work-image:last").append(formattedPicture);
+        $(".work-entry:last").append(HTMLrow);        
+        $(".work-entry > .row:last").append(HTMLworkInformationColumn);        
         $(".work-entry > .row > .work-info:last").append(formattedEmployerTitle, formattedDate, fomattedDescription);
     }
 }
@@ -214,17 +209,14 @@ education.display = function() {
         var formattedHTMLschoolDates = HTMLschoolDates.replace("%data%", education.schools[school].year);
         var formattedHTMLschoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
         var formattedHTMLschoolMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
-        //var formattedHTMLpicture = HTMLschoolPicture.replace("%data%", education.schools[school].schoolPic);
+        
         var finalFormattedHTMLeducation = formattedHTMLschoolName + formattedHTMLschoolDegree;
-
-        //var formattedHTMLschoolImageColumn = HTMLschoolImageColumn.replace("%data%", formattedHTMLpicture);
         var formattedHTMLschoolInformationColumn = HTMLschoolInformationColumn.replace("%data%", finalFormattedHTMLeducation);
 
         $("#school-education").append(HTMLschoolStart);
         $(".school-education-entry:last").append(HTMLrow);
 
 
-        //$(".school-education-entry > .row:last").append(formattedHTMLschoolImageColumn);
         $(".school-education-entry > .row:last").append(formattedHTMLschoolInformationColumn);
         $(".school-education-entry > .row > .school-information:last").append(formattedHTMLschoolDates, formattedHTMLschoolLocation, formattedHTMLschoolMajor);
 
@@ -235,17 +227,13 @@ education.display = function() {
         var formattedHTMLschoolName = HTMLschoolName.replace("%data%", education.onlineCourses[course].school);
         var formattedHTMLschoolDegree = HTMLschoolDegree.replace("%data%", education.onlineCourses[course].title);
         var formattedHTMLschoolDates = HTMLschoolDates.replace("%data%", education.onlineCourses[course].year);
-        //var formattedHTMLpicture = HTMLschoolPicture.replace("%data%", education.onlineCourses[course].img);
         var finalFormattedHTMLeducation = formattedHTMLschoolName + formattedHTMLschoolDegree;
 
-        //var formattedHTMLschoolImageColumn = HTMLschoolImageColumn.replace("%data%", formattedHTMLpicture);
         var formattedHTMLschoolInformationColumn = HTMLschoolInformationColumn.replace("%data%", finalFormattedHTMLeducation);
 
         $("#school-online").append(HTMLschoolStart);
         $(".school-education-entry:last").append(HTMLrow);
 
-
-        //$(".school-education-entry > .row:last").append(formattedHTMLschoolImageColumn);
         $(".school-education-entry > .row:last").append(formattedHTMLschoolInformationColumn);
         $(".school-education-entry > .row > .school-information:last").append(formattedHTMLschoolDates, formattedHTMLschoolLocation);
 

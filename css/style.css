@@ -232,13 +232,6 @@ footer > .container > p
     z-index: -1;
 }
 
-.hr-blue {
-    background-color: #3BB9FF;
-    border: none;
-    height: 2px;
-    margin-top: 0;     
-    width: 90%;
-}
 
 hr
 {
@@ -266,15 +259,15 @@ hr
 
 dt {
   float: left;
-  width: 15%;
+  width: 30%;
 }
 
 dd {
   float: left;
-  width: 85%;
+  width: 70%;
 }
 
-/* Media queries to handle various device widths */
+
 
 @media only screen and (max-width: 1024px) {
   #lets-connect {
@@ -286,6 +279,12 @@ dd {
   .biopic {
     width: 175px;
   }
+  
+  /*.header
+{
+    background: linear-gradient(180deg, #236b8e 40%, #ffffff 0%);
+}
+  */
 }
 
 @media only screen and (max-width: 750px) {
@@ -295,9 +294,12 @@ dd {
   .biopic {
     width: 150px;
   }
-  .welcome-message {
-    display: none;
+ 
+  #header-info
+  {
+      padding-bottom: 100px;
   }
+  
 }
 
 #map {
@@ -319,4 +321,27 @@ dd {
   .biopic {
     display: block;
   }
+}
+
+
+@media only screen and (min-width:750px) and (max-width:900px) {
+  .biopic {
+    width: 175px;
+  }
+  
+  .header-main
+  {
+      margin-top: 0px;
+  }
+  
+  #welcome-msg
+  {
+      margin-top: 30px;
+  }
+  
+  /*.header
+{
+    background: linear-gradient(180deg, #236b8e 40%, #ffffff 0%);
+}
+  */
 }
