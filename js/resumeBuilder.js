@@ -10,7 +10,7 @@ var bio = {
     },
     "welcomeMessage": "Welcome to my online resume, detailing all of my experiance and education throughout my occupational career",
     "skills": ["C#.net ", "Windows Communication Foundation (WCF) ", "SQL Server"],
-    "bioPic": "images/fry.jpg"
+    "bioPic": "images/fry"
 };
 
 // Work
@@ -22,7 +22,6 @@ var work = {
             "title": "Intership",
             "dates": "July 2012 - December 2012",
             "location": "Bloubergstrand, Cape Town, South Africa",
-            "workPic": "images/work/PCT_logo.png",
             "description": "I started my career at PCT as an intern during the work integrated learning program at CPUT. During this time I was on a six month contract to learn about industry and after the six month contract was promoted to junior developer. PCT uses a scrum/agile methodology integrated with a Jira tracking and ticketing system to monitor progress. During my intership at PCT I was involved with the following projects:",
             "projects": [{
                 "name" : "Nuclear Safety Awareness Seminar (NSA)",
@@ -34,7 +33,6 @@ var work = {
             "title": "Junior Developer",
             "dates": "January 2013 - November 2015",
             "location": "Bloubergstrand, Cape Town, South Africa",
-            "workPic": "images/work/PCT_logo.png",
             "description": "After my 6 month contract as an intern at PCT, I was employed as a Junior Developer and was involved with the following projects:",
             "projects": 
             [
@@ -151,7 +149,11 @@ bio.display = function() {
         var formattedHTMLtwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
         var formattedHTMLgithub = HTMLgithub.replace("%data%", bio.contacts.github);
         var formattedHTMLlocation = HTMLlocation.replace("%data%", bio.contacts.location);
-        var formattedHTMLpicture = HTMLbioPic.replace("%data%", bio.bioPic);
+        
+        var picturePatten = "%data%";
+        var regExp = new RegExp(picturePatten, "g");
+        
+        var formattedHTMLpicture = HTMLbioPic.replace(regExp, bio.bioPic);
         var formattedHTMLskype = HTMLskype.replace("%data%", bio.contacts.skype);
         var formattedHTMLwelomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 

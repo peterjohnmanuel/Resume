@@ -13,7 +13,13 @@ var HTMLskype = '<dt><i class="fa fa-skype"></i><span class="contact-text"> Skyp
 var HTMLgithub = '<dt><i class="fa fa-github-square"></i><span class="contact-text"> Github</span></dt><dd> <span>%data%</span></dd>';
 var HTMLlocation = '<dt><i class="fa fa-map-o"></i><span class="contact-text"> Location</span></dt><dd> <span>%data%</span></dd>';
 
-var HTMLbioPic = '<img src="%data%" class="biopic">';
+var HTMLbioPic = `                    
+                <picture alt="Bio Picture">
+                    <source srcset="dist/%data%-M.jpg" />
+                    <img src="dist/images/%data%.jpg" class="biopic" alt="Bio Picture"> 
+                </picture>`;
+                            
+                            
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
 var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-box"></ul>';
@@ -32,7 +38,6 @@ var HTMLWorkProjectStart = '<section class="work-projects-entry"></section>';
 var HTMLWorkProjectHeading = '<h5>%data%</h5>';
 var HTMLWorkProjectDescription = '<p>%data%</p>';
 
-//var HTMLworkImageColumn = '<div class="hidden-xs hidden-sm col-md-1 work-image"></div>';
 var HTMLworkInformationColumn = '<article class="col-xs-12 col-sm-12 col-md-12 work-info"></article>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
