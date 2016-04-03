@@ -289,33 +289,3 @@ education.display();
 
 
 $("#mapDiv").append(googleMap);
-
-
-
-
-
-// $("#internationlizeButton").click(inName($("#name").text()));
-
-
-// function inName(oldName)
-// {
-//     oldName = oldName.trim().split();
-
-//     console.log(finalName);
-//     var splitName = oldName.split(" ");
-
-//     console.log(oldName);
-
-//     finalName = "";
-
-//     for (var i = 0; i < splitName.length; i++)
-//     {
-//         finalName +=  i % 2 === 0 ? splitName[i].charAt(0).toUpperCase() + splitName[i].slice(1).toLowerCase() : splitName[i].toUpperCase() ;
-
-//         finalName += " ";
-//     }
-
-//     finalName = finalName.trim();
-
-//     return finalName;
-// }
