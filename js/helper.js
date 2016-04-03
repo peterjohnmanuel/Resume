@@ -17,7 +17,7 @@ var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
 var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-box"></ul>';
-var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
+var HTMLskills = '<li><span>%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a href="#">%data%';
@@ -26,6 +26,11 @@ var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p><br>%data%</p>';
 var HTMLworkPicture = '<img class="school-picture" src="%data%">';
+
+
+var HTMLWorkProjectStart = '<section class="work-projects-entry"></section>';
+var HTMLWorkProjectHeading = '<h5>%data%</h5>';
+var HTMLWorkProjectDescription = '<p>%data%</p>';
 
 //var HTMLworkImageColumn = '<div class="hidden-xs hidden-sm col-md-1 work-image"></div>';
 var HTMLworkInformationColumn = '<article class="col-xs-12 col-sm-12 col-md-12 work-info"></article>';
