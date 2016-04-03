@@ -151,3 +151,5 @@ gulp.task('watch', function() {
 //gulp.task('default', ['fonts', 'useref', 'htmlmin', 'responsive', 'images','watch']);
 
 gulp.task('default', ['fonts', 'useref', 'responsive', 'images']);
+
+gulp.task('responsive', [ 'responsive']);

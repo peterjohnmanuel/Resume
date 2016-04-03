@@ -49,7 +49,13 @@ var HTMLprojectDescription = '<p><br>%data%</p>';
 
 
 
-var HTMLprojectImage = '<img class="project-thumbnail" src="%data%">';
+//var HTMLprojectImage = '<img class="project-thumbnail" src="%data%">';
+
+var HTMLprojectImage = `                    
+                <picture class="project-thumbnail" alt="Project Picture">
+                    <source srcset="%data%-S.png" />
+                    <img src="%data%.jpg" class="project-pic" alt="Project Picture"> 
+                </picture>`;
 
 var HTMLschoolStart = '<div class="school-education-entry"></div>';
 var HTMLschoolName = '<a href="#">%data%';
