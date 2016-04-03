@@ -34,7 +34,6 @@ h6 {
 
 h1 {
   font-size: 40px;
-  /*color: #f5a623;*/
   line-height: 48px;
   display: inline;
 }
@@ -44,7 +43,6 @@ h2 {
   font-size: 24px;
   color: #999;
   line-height: 29px;
-  /*padding: 10px;*/
 }
 
 h3 {
@@ -96,7 +94,6 @@ a {
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  /*color: #f3f3f3;*/
   line-height: 28px;
 }
 
@@ -113,9 +110,6 @@ a {
   color: #f5ae23;
 }
 
-/*.white-text {
-  color: #ffffff;
-}*/
 
 .white-text {
   font-weight: bold;
@@ -169,11 +163,8 @@ ul {
 .biopic {
   float: left;
   padding-left: 10px;
-  /*//margin-top: 75px;*/
   width: 300px;
   display: none;
-      /*-moz-border-radius: 30px;
-    border-radius: 200px;*/
     border-radius: 50%;
 
 }
@@ -182,9 +173,6 @@ img {
   padding: 10px;
 }
 
-/*span {
-  padding: 5px;
-}*/
 
 #lets-connect {
   text-align: center;
@@ -291,11 +279,7 @@ dd {
     width: 175px;
   }
   
-  /*.header
-{
-    background: linear-gradient(180deg, #236b8e 40%, #ffffff 0%);
-}
-  */
+
 }
 
 @media only screen and (max-width: 750px) {
@@ -322,9 +306,6 @@ dd {
 #mapDiv {
   height: 400px;
   width: 100%;
-  /*padding-bottom: 5%;*/
-  
-  /*margin-bottom: 5%;*/
 }
 
 @media only screen and (min-width: 750px) {
@@ -350,9 +331,4 @@ dd {
       margin-top: 30px;
   }
   
-  /*.header
-{
-    background: linear-gradient(180deg, #236b8e 40%, #ffffff 0%);
-}
-  */
 }
