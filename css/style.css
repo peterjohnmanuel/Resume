@@ -194,8 +194,7 @@ img {
 
 footer
 {
-    position: absoulte;
-    height: 60px;
+    position: absoulte;    
     bottom: 0;    
     width: 100%;
     background-color: #236b8e;
@@ -208,6 +207,8 @@ footer > .container > p
 {
     margin: 20px 0;
     color :white; 
+    padding-top : 130px;
+    background-color: #236b8e;
 }
 
 .heading-hr{

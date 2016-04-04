@@ -4,14 +4,16 @@ var HTMLheaderName = '<h1 id="name" class="white-text">%data%</h1>';
 var HTMLheaderRole = '<h3 class="white-text">%data%</h3>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="contact-text">%contact%</span><span>%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><span class="contact-text"><span class="fa fa-mail"> </span>mobile</span><span>%data%</span></li>';
 var HTMLtwitter = '<li class="flex-item"><span class="contact-text">twitter</span><span>%data%</span></li>';
 var HTMLblog = '<li class="flex-item"><span class="contact-text">blog</span><span>%data%</span></li>';
 
+var HTMLmobile = '<dt><i class="fa fa-mobile"></i><span class="contact-text"> Mobile</span></dt><dd> <span>%data%</span></dd>';
 var HTMLemail = '<dt><i class="fa fa-yahoo"></i><span class="contact-text"> Yahoo</span></dt><dd> <span>%data%</span></dd>';
 var HTMLskype = '<dt><i class="fa fa-skype"></i><span class="contact-text"> Skype</span></dt><dd> <span>%data%</span></dd>';
 var HTMLgithub = '<dt><i class="fa fa-github-square"></i><span class="contact-text"> Github</span></dt><dd> <span>%data%</span></dd>';
 var HTMLlocation = '<dt><i class="fa fa-map-o"></i><span class="contact-text"> Location</span></dt><dd> <span>%data%</span></dd>';
+
+
 
 var HTMLbioPic = `                    
                 <picture alt="Bio Picture">

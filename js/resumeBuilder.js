@@ -6,6 +6,7 @@ var bio = {
     "contacts": {
         "email": "peterjohn.manuel@yahoo.com",
         "skype": "peterjohnmanuel",
+        "mobile": "(+27) 041 2798412", // this is a fake number.
         "github": "https://github.com/peterjohnmanuel",
         "location": "Cape Town, South Africa"
     },
@@ -51,15 +52,6 @@ var work = {
                 },
             ]
         },
-        // {
-        //     "employer": "Red Panda Software",
-        //     "title": "Software Developer",
-        //     "dates": "December 2015 - Current ",
-        //     "location": "Pinelands, Cape Town, South Africa",
-        //     "workPic": "images/work/redPanda_logo.png",
-        //     "description": "description",
-        //     "projects": []
-        // }
     ],
 };
 
@@ -72,21 +64,21 @@ var education = {
             "location": "Pinelands, Cape Town, South Africa, ",
             "degree": "National Senior Certificate",
             "dates": "2009",
-            "major": ["Electrical Technology"],
+            "majors": ["Electrical Technology"],
         },
         {
             "name": "Cape Peninsula University of Technology",
             "location": "Cape Town, Cape Town, South Africa",
             "degree": "NDip IT: Nation Diploma Information Technology",
             "dates": "2012",
-            "major": ["Software Development"],
+            "majors": ["Software Development"],
         },
         {
             "name": "Cape Peninsula University of Technology",
             "location": "Cape Town, Cape Town, South Africa",
             "degree": "BTech IT: Baccalaureus Technologiae Information Technology",
             "dates": "2014",
-            "major": ["Software Development"],
+            "majors": ["Software Development"],
         }
     ],
 
@@ -147,6 +139,7 @@ bio.display = function() {
     var formattedHTMLtwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
     var formattedHTMLgithub = HTMLgithub.replace("%data%", bio.contacts.github);
     var formattedHTMLlocation = HTMLlocation.replace("%data%", bio.contacts.location);
+    var formattedHTMMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 
     var picturePatten = "%data%";
     var regExp = new RegExp(picturePatten, "g");
@@ -159,7 +152,7 @@ bio.display = function() {
     $("#welcome-info").append(formattedHTMLpicture);
     $("#welcome-msg").append(formattedHTMLwelomeMessage);
 
-    if (bio["skills"].length > 0) {
+    if (bio.skills.length) {
 
 
         bio.skills.forEach(function(skill) {
@@ -168,7 +161,9 @@ bio.display = function() {
         });
     }
 
-    $("#topContacts").append(formattedHTMLemail, formattedHTMLskype, formattedHTMLgithub, formattedHTMLlocation);
+    $("#topContacts").append(formattedHTMMobile, formattedHTMLemail, formattedHTMLskype, formattedHTMLgithub, formattedHTMLlocation);
+    
+    $("#bottomContacts").append(formattedHTMMobile, formattedHTMLemail, formattedHTMLskype, formattedHTMLgithub, formattedHTMLlocation);
 
 };
 
@@ -218,13 +213,6 @@ projects.display = function() {
 
         $(".project-entry:last").append(formattedTitle, formattedDates, formattedDescription);
 
-        // if (project.images.length > 0) {
-
-        //     project.images.forEach(function(image) {
-        //         formattedImage = HTMLprojectImage.replace("%data%", image);
-        //         $(".project-entry:last").append(formattedImage);
-        //     });
-        // }
     });
 };
 
@@ -242,7 +230,7 @@ education.display = function() {
 
         var formattedHTMLschoolMajor = "";
 
-        school.major.forEach(function(major) {
+        school.majors.forEach(function(major) {
             formattedHTMLschoolMajor += HTMLschoolMajor.replace("%data%", major) + ",";
         });
 
