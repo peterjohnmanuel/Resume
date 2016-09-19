@@ -13,5 +13,20 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7"
+  },
+  "cInstall": {
+    "folder": {
+      "js": "src/js/",
+      "css": "src/css/",
+      "otf, eot, svg, ttf, woff": "src/fonts/"
+    },
+    "source": {
+      "bootstrap-sass": {
+        "bootstrap.min.js": "assets/javascripts/bootstrap.min.js"
+      }
+    }
+  }
 }

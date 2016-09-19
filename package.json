@@ -9,10 +9,13 @@
   "author": "Peter John Manuel",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.16.0",
+    "clean-bower-installer": "^0.3.4",
     "grunt-contrib-copy": "^1.0.0",
     "gulp": "^3.9.1",
-    "gulp-livereload": "^3.8.1",
-    "gulp-responsive": "^2.1.0"
+    "gulp-plumber": "^1.1.0",
+    "gulp-responsive": "^2.1.0",
+    "gulp-sass": "^2.3.2"
   },
   "repository": {
     "type": "git",
