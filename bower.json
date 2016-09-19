@@ -1,0 +1,17 @@
+{
+  "name": "resume",
+  "description": "resume project",
+  "main": "index.html",
+  "authors": [
+    "Peter John Manuel"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/peterjohnmanuel/Resume",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
