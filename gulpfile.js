@@ -12,6 +12,7 @@ var gulp = require('gulp');
 
 var sass = require('gulp-sass');
 var plumber = require('gulp-plumber');
+var del = require('del');
 
 var browserSync = require('browser-sync').create();
 
@@ -175,6 +176,11 @@ gulp.task('watch', ['browser-sync'], function() {
     gulp.watch(path.src + 'images/**/*', ['responsive']).on('change', browserSync.reload);;
     gulp.watch(path.src + 'fonts/**/*', ['fonts']).on('change', browserSync.reload);;
     gulp.watch(path.src + '*.html').on('change', browserSync.reload);;
+});
+
+gulp.task('prod', function(){
+
+    del(path.dist + "**/*");
 });
 
 gulp.task('default', ['fonts', 'useref', 'responsive', 'images']);
