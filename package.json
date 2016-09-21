@@ -14,9 +14,14 @@
     "del": "^2.2.2",
     "grunt-contrib-copy": "^1.0.0",
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-if": "^2.0.1",
     "gulp-plumber": "^1.1.0",
     "gulp-responsive": "^2.1.0",
-    "gulp-sass": "^2.3.2"
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.2"
   },
   "repository": {
     "type": "git",
