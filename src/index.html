@@ -9,7 +9,9 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <!--<link href="css/style.css" rel="stylesheet">-->
+    <link href="css/app.css" rel="stylesheet">
+
     <!--endbuild-->
 
 </head>
@@ -21,121 +23,129 @@
 
             <section class="container-fluid">
                 <div id="header" class="container">
-                    <section class="row header-main">
-
-                        <section id="welcome-info" class="col-sm-6 col-md-4">
-                        </section>
-
-                        <section id="header-info" class="col-md-8">
-                        </section>
+                    <section id="bio" class="bio">
+                        <h1 class="main-title" data-bind="text: name"></h1>
+                        <h3 class="sub-title" data-bind="text: title"></h3>
                     </section>
-
-                    <section class="row">
-
-                        <section class="col-md-12">
-                            <h3 class="section-heading">Welcome </h3>
-                            <ul id="welcome-msg">
-                            </ul>
-                        </section>
-                    </section>
-
-
-                    <section class="row">
-
-
-                        <section class="col-md-6">
-                            <h3 class="section-heading"><i class="fa fa-wrench"></i> Skills </h3>
-                            <ul id="skills">
-                            </ul>
-                        </section>
-
-
-
-                        <section class="col-md-6">
-                            <h3 class="section-heading"><i class="fa fa-phone-square"></i> Contact Information: </h3>
-                            <dl id="topContacts">
-                            </dl>
-                        </section>
-
-                    </section>
-
-
                 </div>
             </section>
         </section>
 
         <section class="container">
 
-            <section id="workExperience">
+            <section class="row">
+
+                <section class="col-md-12">
+                    <h3 class="section-heading">Welcome </h3>
+                    <h5>Welcome to my online resume, detailing all of my experiance and education throughout my occupational career</h5>
+                </section>
+            </section>
+
+
+            <section class="row">
+
+                <section id="skill" class="col-md-6">
+                    <h3 class="section-heading"><i class="fa fa-wrench"></i> Summarized Skills </h3>
+                    <ul data-bind="foreach: skills">
+                        <li data-bind="text: $data"></li>
+                    </ul>
+                </section>
+
+                <section id="contact" class="col-md-6">
+                    <h3 class="section-heading"><i class="fa fa-phone-square"></i> Contact Information: </h3>
+                    <section data-bind="foreach: contacts">
+                        <dl>
+                            <dt>
+                                <em class="fa" data-bind="css: contactIcon "></em>
+                                <span class="contact-text" data-bind="text: contactType"></span>
+                            </dt>
+                            <dd data-bind="text: contactDetails">
+                            </dd>
+                        </dl>
+                    </section>
+                </section>
+
+            </section>
+
+            <section id="occupation">
                 <h3 class="section-heading">
-                <span class="fa-stack fa-lg">
+                    <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
-                </span> 
-                Occupation Experience <hr/>
-            </h3>
+                </span> Occupation Experience
+                    <hr/>
+                </h3>
+                <section class="occupation" data-bind="foreach: occupations">
+                    <h5 class="sub-heading">
+                        <span data-bind="text: employer"></span> -
+                        <span data-bind="text: title"></span>
+                    </h5>
+                    <section class="occupation-date" data-bind="text: employmentDate"></section>
+                    <section class="occupation-description" data-bind="text: description"></section>
+                    <section data-bind="foreach: projects">
+                        <h5 class="occupation-project-heading" data-bind="text: name"></h5>
+                        <p class="occupation-project-description" data-bind="text: description"></p>
+                    </section>
+                </section>
             </section>
 
-            <section class="education">
+            <section id="education" class="education">
 
                 <h3 class="section-heading">
-                <span class="fa-stack fa-lg">
+                    <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
-                </span> 
-                Education <hr/>
-            </h3>
+                </span> Education
+                    <hr/>
+                </h3>
 
-                <article id="school-education">
+                <section id="school-education">
                     <h3 class="section-heading">
-                        <i class="fa fa-university"> </i> 
-                        School/University
+                        <i class="fa fa-university"> </i> School/University
                     </h3>
-                </article>
+                </section>
 
-                <article id="school-online">
+                <section data-bind="foreach: educations">
+                    <h5 class="sub-heading">
+                        <span data-bind="text: institution"></span> -
+                        <span data-bind="text: course"></span>
+                    </h5>
+                    <section class="occupation-date" data-bind="text: year"></section>
+                    <section class="" data-bind="text: place"></section>
+                    <section class="" data-bind="text: major"></section>
+                </section>
+
+                <section id="school-online">
                     <h3 class="section-heading">
-                        <i class="fa fa-book"> </i> 
-                        Online Courses
+                        <i class="fa fa-book"> </i> Online Courses
                     </h3>
-                </article>
+                </section>
+
+                <section data-bind="foreach: onlineEducations">
+                    <h5 class="sub-heading">
+                        <span data-bind="text: institution"></span> -
+                        <span data-bind="text: course"></span>
+                    </h5>
+                    <section class="occupation-date" data-bind="text: year"></section>
+                </section>
             </section>
-            
+
             <section id="projects">
                 <h3 class="section-heading">
-                        <span class="fa-stack fa-lg">
+                    <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa fa-code fa-stack-1x fa-inverse"></i>
-                        </span> 
-                        Projects <hr/>
-                    </h3>
-            </section>            
-
-
-            <section id="mapDiv">
-                <h3 class="section-heading">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
-                        </span> 
-                        Where I've Studied and Worked <hr/>
-                    </h3>
+                        </span> Projects
+                    <hr/>
+                </h3>
             </section>
-
 
         </section>
 
         <footer>
-            <div class="container">
-                <h3 class="white-text">Lets Connect</h3>
-
-                <dl id="bottomContacts" class="">                    
-                </dl>                
-                <p class="text-center">
-                    Peter John Manuel Online Resume
-                </p>
-
-            </div>
+            <section class="text-center">
+                Peter John Manuel Online Resume
+            </section>
         </footer>
 
     </div>
@@ -143,29 +153,31 @@
 
     <!--build:js js/main.min.js -->
     <script src="js/jQuery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/knockout.min.js"></script>
+
     <script src="js/helper.js"></script>
+
+
+    <script src="js/Models/Occupation.js"></script>
+    <script src="js/Models/Education.js"></script>
+    <script src="js/Models/Contact.js"></script>
+    <script src="js/Models/Skills.js"></script>
+    <script src="js/Models/Bio.js"></script>
+
+    <script src="js/ViewModels/BioViewModel.js"></script>
+    <script src="js/ViewModels/OccupationViewModel.js"></script>
+    <script src="js/ViewModels/EducationViewModel.js"></script>
+    <script src="js/ViewModels/ContactViewModel.js"></script>
+    <script src="js/ViewModels/SkillsViewModel.js"></script>
+    <script src="js/app.js"></script>
+
+
     <script src="js/resumeBuilder.js"></script>
     <!-- endbuild -->
 
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
 
-    <script type="text/javascript">
-    
-    if(document.getElementsByTagName('h1').length === 0) {
-      document.getElementById('header').style.display = 'none';
-    }
-    if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.display = 'none';
-    }  
-    
-    if(document.getElementsByClassName('school-education-entry').length === 0) {
-      document.getElementById('education').style.display = 'none';
-    }
-
-    if(document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.display = 'none';
-    }
-    </script>
 </body>
 
 </html>

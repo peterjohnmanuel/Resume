@@ -126,12 +126,6 @@ a {
   background-color: #4a4a4a;
 }
 
-
-.header
-{
-    background: linear-gradient(180deg, #236b8e 40%, #ffffff 0%);
-}
-
 .header-main
 {
     margin-top: 40px; 
@@ -192,24 +186,7 @@ img {
     max-width: 90px;
 }
 
-footer
-{
-    position: absoulte;    
-    bottom: 0;    
-    width: 100%;
-    background-color: #236b8e;
-    color :white;    
-    font-weight: bold;
-    font-family: 'Lato', sans-serif;
-}
 
-footer > .container > p 
-{
-    margin: 20px 0;
-    color :white; 
-    padding-top : 130px;
-    background-color: #236b8e;
-}
 
 .heading-hr{
     position: relative;
@@ -225,115 +202,4 @@ footer > .container > p
     height: 0.5em;
     border-top: 1px solid black;
     z-index: -1;
-}
-
-
-hr
-{
-    background-color: #236b8e; 
-    border: none;
-    height: 2px;
-    margin-top: 0;     
-    width: 90%;
-}
-
-.section-heading
-{
-    color: #236b8e;
-}
-
-#workExperience{
-    margin-top: 10 px; 
-}
-
-#mapDiv {
-  height: 400px;
-  width: 100%;  
-  margin-bottom: 100px;
-}
-
-dt {
-  float: left;
-  width: 30%;
-}
-
-dd {
-  float: left;
-  width: 70%;
-}
-
-.work-projects-entry > h5 
-{
-    padding-bottom: 5px;
-}
-
-.project-pic
-{
-    width: 300px;
-    height: 300px;
-}
-
-@media only screen and (max-width: 1024px) {
-  #lets-connect {
-    margin-top: 5%;
-  }
-}
-
-@media only screen and (max-width:900px) {
-  .biopic {
-    width: 175px;
-  }
-  
-
-}
-
-@media only screen and (max-width: 750px) {
-  #lets-connect {
-    margin-top: 10%;
-  }
-  .biopic {
-    width: 150px;
-  }
- 
-  #header-info
-  {
-      padding-bottom: 100px;
-  }
-  
-}
-
-#map {
-  display: block;
-  height: 100%;
-  margin: 0 5%;
-}
-
-#mapDiv {
-  height: 400px;
-  width: 100%;
-}
-
-@media only screen and (min-width: 750px) {
-  #skills-h3,
-  .biopic {
-    display: block;
-  }
-}
-
-
-@media only screen and (min-width:750px) and (max-width:900px) {
-  .biopic {
-    width: 175px;
-  }
-  
-  .header-main
-  {
-      margin-top: 0px;
-  }
-  
-  #welcome-msg
-  {
-      margin-top: 30px;
-  }
-  
 }

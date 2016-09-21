@@ -1,14 +1,14 @@
 var gulp = require('gulp');
-    // uglify = require('gulp-uglify'),
-    // rename = require('gulp-rename'),
-    // minifyCSS = require('gulp-clean-css'),
-    // concat = require('gulp-concat'),
-    // plumber = require('gulp-plumber'),
-    // coffee = require('gulp-coffee'),
-    // useref = require('gulp-useref'),
-    // gulpIf = require('gulp-if'),
-    // htmlmin = require('gulp-htmlmin'),
-    // responsive = require('gulp-responsive-images');
+// uglify = require('gulp-uglify'),
+// rename = require('gulp-rename'),
+// minifyCSS = require('gulp-clean-css'),
+// concat = require('gulp-concat'),
+// plumber = require('gulp-plumber'),
+// coffee = require('gulp-coffee'),
+// useref = require('gulp-useref'),
+// gulpIf = require('gulp-if'),
+// htmlmin = require('gulp-htmlmin'),
+// responsive = require('gulp-responsive-images');
 
 var sass = require('gulp-sass');
 var plumber = require('gulp-plumber');
@@ -16,23 +16,31 @@ var plumber = require('gulp-plumber');
 var browserSync = require('browser-sync').create();
 
 
-var path =
-    {
-        bootstrap: './bower_components/bootstrap-sass/',
-        css: 'css/',
-        dist: './dist/',
-        sass: 'sass/',
-        src: './src/'        
-    };
+var path = {
+    bootstrap: './bower_components/bootstrap-sass/',
+    css: 'css/',
+    dist: './dist/',
+    sass: 'scss/**/*.scss',
+    src: './src/'
+};
 
 
 /** Sass  */
-gulp.task('sass', function () {
+gulp.task('sass', function() {
     gulp.src(path.src + path.sass)
         .pipe(plumber())
         .pipe(sass({ includePaths: [path.bootstrap + 'assets/stylesheets'] }))
         .pipe(gulp.dest(path.src + path.css))
         .pipe(browserSync.reload({ stream: true }));
+});
+
+/** Browser Sync */
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: path.src
+        }
+    });
 });
 
 
@@ -58,17 +66,17 @@ gulp.task('sass', function () {
 //         .pipe(livereload());
 // });
 
-gulp.task('fonts', function () {
+gulp.task('fonts', function() {
     gulp.src('fonts/**/*')
         .pipe(gulp.dest('dist/fonts'));
 });
 
-gulp.task('images', function () {
+gulp.task('images', function() {
     gulp.src('images/**/*')
         .pipe(gulp.dest('dist/images'));
 });
 
-gulp.task('useref', function () {
+gulp.task('useref', function() {
     gulp.src('*.html')
         .pipe(useref())
         .pipe(gulpIf('*.js', uglify()))
@@ -76,18 +84,17 @@ gulp.task('useref', function () {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('htmlmin', function () {
+gulp.task('htmlmin', function() {
     gulp.src('dist/*.html')
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('responsive', function () {
+gulp.task('responsive', function() {
     gulp.src('images/**/*')
         .pipe(responsive({
 
-            '*.jpg': [
-                {
+            '*.jpg': [{
                     width: 1600,
                     suffix: '-XL',
                     quality: 100
@@ -121,8 +128,7 @@ gulp.task('responsive', function () {
 
             ],
 
-            '*.png': [
-                {
+            '*.png': [{
                     width: 1600,
                     suffix: '-XL',
                     quality: 100
@@ -152,20 +158,23 @@ gulp.task('responsive', function () {
                     height: 60,
                     suffix: '-Banner',
                     quality: 100
-                }]
+                }
+            ]
 
         }))
         .pipe(gulp.dest('dist/images'));
 
 });
 
-gulp.task('watch', function () {
+gulp.task('watch', ['browser-sync'], function() {
 
-    gulp.watch('js/**/*.js', ['useref']).on('change', browserSync.reload);;
-    gulp.watch('css/**/*.css', ['useref']).on('change', browserSync.reload);;
-    gulp.watch('images/**/*', ['responsive']).on('change', browserSync.reload);;
-    gulp.watch('fonts/**/*', ['fonts']).on('change', browserSync.reload);;
-    gulp.watch('*.html', ['htmlmin']).on('change', browserSync.reload);;
+    //gulp.watch(path.src + 'js/**/*.js', ['useref']).on('change', browserSync.reload);
+    gulp.watch(path.src + 'js/**/*.js').on('change', browserSync.reload);
+    //gulp.watch(path.src + 'css/**/*.css').on('change', browserSync.reload);;
+    gulp.watch(path.src + path.sass, ['sass']).on('change', browserSync.reload);;
+    gulp.watch(path.src + 'images/**/*', ['responsive']).on('change', browserSync.reload);;
+    gulp.watch(path.src + 'fonts/**/*', ['fonts']).on('change', browserSync.reload);;
+    gulp.watch(path.src + '*.html').on('change', browserSync.reload);;
 });
 
 gulp.task('default', ['fonts', 'useref', 'responsive', 'images']);

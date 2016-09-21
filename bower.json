@@ -15,7 +15,8 @@
     "tests"
   ],
   "devDependencies": {
-    "bootstrap-sass": "^3.3.7"
+    "bootstrap-sass": "^3.3.7",
+    "knockout": "^3.4.0"
   },
   "cInstall": {
     "folder": {
@@ -26,6 +27,9 @@
     "source": {
       "bootstrap-sass": {
         "bootstrap.min.js": "assets/javascripts/bootstrap.min.js"
+      },
+      "knockout": {
+        "knockout.min.js": "dist/knockout.js"
       }
     }
   }

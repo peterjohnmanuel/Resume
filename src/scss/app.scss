@@ -1,2 +1,106 @@
-@import "bootstrap";
-@import "bootstrap/theme";
+//@import "bootstrap";
+//@import "bootstrap/theme";
+$headingColor: #236b8e;
+
+.header{
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    background: $headingColor;
+    color: #ffffff;
+}
+
+.section-heading
+{
+    color: $headingColor;
+}
+
+// Occupation
+.occupation {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+// Main sub-title Heading
+.sub-heading {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: $headingColor;
+}
+
+// Occupation Date
+.occupation-date{
+  font-style: italic;
+  font-size: 14px;
+  color: #999;
+  line-height: 16px;
+  display: inline;
+}
+
+// Occupation Description
+.occupation-description{
+    margin-top: 10px;
+}
+
+// Occupation Project Heading
+.occupation-project-heading {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+// Horizontal line under main heading
+hr
+{
+    background-color: $headingColor; 
+    border: none;
+    height: 2px;
+    margin-top: 0;     
+    width: 90%;
+}
+
+// Footer 
+footer
+{
+    position: absoulte;    
+    bottom: 0;    
+    width: 100%;
+    background-color: $headingColor;
+    color :white;    
+    font-weight: bold;
+    margin-top: 25px; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    .footer-text{
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+
+}
+
+// Contact Information dt
+dt {
+  float: left;
+  width: 30%;
+}
+
+// Contact Information dd
+dd {
+  float: left;
+  width: 70%;
+}
+
+ul{
+    list-style: none;
+    padding: 0px;
+}
+
+.main-title{
+    margin: 0px;
+}
+
+.sub-title{
+    margin: 0px;
+    font-style: italic;
+}
