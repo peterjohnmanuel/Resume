@@ -25,8 +25,9 @@ var education3 = new Education('Cape Peninsula University of Technology', 'BTech
 var allEducation = [education1, education2, education3];
 
 var onlineEducation1 = new Education('NetIQ', 'NetIQ Identity Manager 4: Administration (Course 3109)', 2015, '' , '');
-var onlineEducation2 = new Education('Udacity', 'Front-End Web Developer Nanodegree', 2016, '' , '');
+var onlineEducation2 = new Education('University of California San Diego', 'Learning how to learn: Powerful mental tools to help you master tough subjects ', 2016, '' , '');
+var onlineEducation3 = new Education('Udacity', 'Front-End Web Developer Nanodegree', 2016, '' , '');
 
-var allOnlineEducation = [onlineEducation1, onlineEducation2]; 
+var allOnlineEducation = [onlineEducation1, onlineEducation2, onlineEducation3]; 
 
 
