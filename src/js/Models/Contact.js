@@ -16,5 +16,8 @@ var contact1 = new Contact('Yahoo', 'peterjohn.manuel@yahoo.com', 'fa-yahoo');
 var contact2 = new Contact('Skype', 'peterjohn.manuel', 'fa-skype');
 var contact3 = new Contact('Github', 'https://github.com/peterjohnmanuel', 'fa-github');
 var contact4 = new Contact('Location', 'Cape Town, RSA', 'fa-map-o');
+var contact5 = new Contact('Portfolio', 'Coming soon', 'fa-briefcase');
 
-var allContacts = [contact1, contact2, contact3, contact4];
+
+
+var allContacts = [contact1, contact2, contact3, contact4, contact5];
