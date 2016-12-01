@@ -62,6 +62,7 @@ gulp.task('watch', ['browser-sync'], function() {
     gulp.watch(path.src + 'js/**/*.js').on('change', browserSync.reload);
     gulp.watch(path.src + path.sass, ['sass']).on('change', browserSync.reload);
     gulp.watch(path.src + 'fonts/**/*', ['fonts']).on('change', browserSync.reload);
+    gulp.watch(path.src + '**/*.html').on('change', browserSync.reload);
 });
 
 /** Delete */

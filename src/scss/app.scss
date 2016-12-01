@@ -2,7 +2,7 @@
 @import "bootstrap/theme";
 $headingColor: #236b8e;
 
-.header{
+header{
     padding-top: 20px; 
     padding-bottom: 20px;
     background: $headingColor;
@@ -23,8 +23,7 @@ $headingColor: #236b8e;
 // Main sub-title Heading
 .sub-heading {
     margin-top: 20px;
-    margin-bottom: 0px;
-    font-weight: bold;
+    margin-bottom: 0px;    
     color: $headingColor;
 }
 
@@ -71,12 +70,7 @@ footer
     margin-top: 25px; 
     padding-top: 15px;
     padding-bottom: 15px;
-
-    .footer-text{
-        margin-top: 20px;
-        padding-bottom: 20px;
-    }
-
+    text-align: center;
 }
 
 // Contact Information dt
