@@ -1,23 +1,36 @@
 @import "bootstrap";
 @import "bootstrap/theme";
-$headingColor: #236b8e;
+$headingColor: #1565c0;
+
+body{
+    background: #212121;
+    color : #ffffff;
+}
 
 header{
+    align-content: center;
+    text-align: center;
     padding-top: 20px; 
     padding-bottom: 20px;
     background: $headingColor;
     color: #ffffff;
 }
 
-.section-heading
-{
-    color: $headingColor;
+.sub-title {    
+    margin: 0px;    
+    display: inline-block;
+    font-style: italic;
 }
+
 
 // Occupation
 .occupation {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.title{
+    margin:0px;
 }
 
 // Main sub-title Heading
@@ -55,7 +68,7 @@ hr
     border: none;
     height: 2px;
     margin-top: 0;     
-    width: 90%;
+    width: 100%;
 }
 
 // Footer 
@@ -90,11 +103,13 @@ ul{
     padding: 0px;
 }
 
-.main-title{
-    margin: 0px;
-}
 
-.sub-title{
+
+.heading-block-icon{
+    background: $headingColor;
+    width: 50px;
+    height: 45px;    
+    padding: 7px;
+    display: inline-block;
     margin: 0px;
-    font-style: italic;
 }

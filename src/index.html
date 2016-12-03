@@ -4,52 +4,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Resume</title>
-
     <!--build:css css/app.min.css-->
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
     <!--endbuild-->
-
 </head>
 
 <body>
     <div id="main">
-
         <header>
-            <section class="container-fluid">
-                <div id="header" class="container">
-                    <section id="bio" class="bio">
-                        <h1 class="main-title" data-bind="text: name"></h1>
-                        <h3 class="sub-title" data-bind="text: title"></h3>
-                    </section>
-                </div>
+            <section id="bio" class="bio">
+                <h1 class="main-title" data-bind="text: name"></h1>
+                    <h3 class="title"> < <p class="sub-title" data-bind="text: title"></p> /> </h3>                                
             </section>
-
         </header>
-
         <section class="container">
-
-            <section class="row">
-                <section class="col-md-12">
-                    <h3 class="section-heading">Welcome </h3>
-                    <h5>Welcome to my online resume, detailing all of my experiance and education throughout my occupational
-                        career
-                    </h5>
-                </section>
-            </section>
-
-
-            <section class="row">
-
+            <article class="row">
                 <section id="skill" class="col-md-6">
-                    <h3 class="section-heading"><i class="fa fa-wrench"></i> Summarized Skills </h3>
-                    <ul data-bind="foreach: skills">
-                        <li data-bind="text: $data"></li>
-                    </ul>
-                </section>
+                <h2>
+                    <p class="heading-block-icon">
+                        <i class="fa fa-briefcase fa-inverse fa-fw"></i>
+                    </p>
+                    Career Summary
+                    <hr/>
+                </h2>   
+                <p>
+I'm a software developer with more than 4 years experiance over various development platforms. Primarily in the .net stack I enjoy experimenting and learning new ways to develop software. Over the years I have gained experienced in front end and back end development and continue to learn on a daily basis. In years passed I have gained expereince with C#.net WCF, SQL server and various other technologies. In my spare time I like to experiment with micro-controllers such as arduino and raspberry pi, play games and study. 
+                </p>                                     
 
+                </section>
                 <section id="contact" class="col-md-6">
-                    <h3 class="section-heading"><i class="fa fa-phone-square"></i> Contact Information: </h3>
+
+                <h2>
+                    <p class="heading-block-icon">
+                        <i class="fa fa-phone-square fa-inverse fa-fw"></i>
+                    </p>
+                    Contact Information
+                    <hr/>
+                </h2>   
+
                     <section data-bind="foreach: contacts">
                         <dl>
                             <dt>
@@ -61,46 +54,78 @@
                         </dl>
                     </section>
                 </section>
-
-            </section>
-
+            </article>
             <article id="occupation">
-                <h3 class="section-heading">
-                    <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
-                </span> Occupation Experience
+                <h2>
+                    <p class="heading-block-icon">
+                        <i class="fa fa-briefcase fa-inverse fa-fw"></i>
+                    </p>
+                    Experience
                     <hr/>
-                </h3>
+                </h2>
                 <section class="occupation" data-bind="foreach: occupations">
                     <h4 class="sub-heading">
                         <span data-bind="text: employer"></span> -
                         <span data-bind="text: title"></span>
                     </h4>
                     <section class="occupation-date" data-bind="text: employmentDate"></section>
-                    <section class="occupation-description" data-bind="text: description"></section>
-                    <section data-bind="foreach: projects">
-                        <h5 class="occupation-project-heading" data-bind="text: name"></h5>
-                        <p class="occupation-project-description" data-bind="text: description"></p>
-                    </section>
+                </section>
+            </article>
+            <article id="education">
+                <h2>
+                    <div class="heading-block-icon">
+                        <i class="fa fa-graduation-cap fa-inverse fa-fw"></i>
+                    </div>
+                    Education
+                    <hr/>
+                </h2>
+                <section id="school-education">
+                    <h3 class="section-heading">
+                        <i class="fa fa-university "> </i> School/University
+                    </h3>
+                </section>
+                <section data-bind="foreach: educations">
+                    <h5 class="sub-heading">
+                        <span data-bind="text: institution"></span> -
+                        <span data-bind="text: course"></span>
+                    </h5>
+                    <section class="occupation-date" data-bind="text: year"></section>
+                    <section class="" data-bind="text: place"></section>
+                    <section class="" data-bind="text: major"></section>
+                </section>
+                <section id="school-online">
+                    <h3 class="section-heading">
+                        <i class="fa fa-book"> </i> Online Courses
+                    </h3>
+                </section>
+                <section data-bind="foreach: onlineEducations">
+                    <h5 class="sub-heading">
+                        <span data-bind="text: institution"></span> -
+                        <span data-bind="text: course"></span>
+                    </h5>
+                    <section class="occupation-date" data-bind="text: year"></section>
                 </section>
             </article>
 
-            <article id="education">
-
-                <h3 class="section-heading">
-                    <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
-                </span> Education
+            <article id="certfications">
+                <h2>
+                    <section class="heading-block-icon">
+                        <i class="fa fa-certificate fa-inverse fa-fw"></i>
+                    </section>
+                    Certifications
                     <hr/>
-                </h3>
+                </h2>
+            </article>
 
-                <section id="school-education">
-                    <h3 class="section-heading">
-                        <i class="fa fa-university"> </i> School/University
-                    </h3>
-                </section>
+            <article id="skill-set">
+                <h2>
+                    <section class="heading-block-icon">
+                        <i class="fa fa-certificate fa-inverse fa-fw"></i>
+                    </section>
+                    Summarized Skill Set
+                    <hr/>                    
+                </h2>
+                <small>Please note this is just a summary of my skill set.</small>
 
                 <section data-bind="foreach: educations">
                     <h5 class="sub-heading">
@@ -112,29 +137,13 @@
                     <section class="" data-bind="text: major"></section>
                 </section>
 
-                <section id="school-online">
-                    <h3 class="section-heading">
-                        <i class="fa fa-book"> </i> Online Courses
-                    </h3>
-                </section>
+            </article>      
 
-                <section data-bind="foreach: onlineEducations">
-                    <h5 class="sub-heading">
-                        <span data-bind="text: institution"></span> -
-                        <span data-bind="text: course"></span>
-                    </h5>
-                    <section class="occupation-date" data-bind="text: year"></section>
-                </section>
-            </article>
         </section>
-
         <footer>
             Peter John Manuel Online Resume
         </footer>
-
     </div>
-
-
     <!--build:js js/app.min.js -->
     <script src="js/jQuery.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -151,7 +160,6 @@
     <script src="js/ViewModels/SkillsViewModel.js"></script>
     <script src="js/app.js"></script>
     <!-- endbuild -->
-
 </body>
 
 </html>
