@@ -125,6 +125,16 @@
                     Certifications
                     <hr/>
                 </h2>
+
+                <ul class="fa-ul" data-bind="foreach: certifications">
+                    <li class="entry">
+                        <em class="fa-li fa fa-play theme-li"></em>
+                        <h4>
+                            <span data-bind="text: certDescription"></span>
+                            <section class="occupation-date" data-bind="text: year"></section>
+                        </h4>
+                    </li>
+                </ul>                
             </article>
             <article id="skill-set">
                 <h2>
@@ -158,11 +168,13 @@
     <script src="js/Models/Contact.js"></script>
     <script src="js/Models/Skills.js"></script>
     <script src="js/Models/Bio.js"></script>
+    <script src="js/Models/Certifications.js"></script>
     <script src="js/ViewModels/BioViewModel.js"></script>
     <script src="js/ViewModels/OccupationViewModel.js"></script>
     <script src="js/ViewModels/EducationViewModel.js"></script>
     <script src="js/ViewModels/ContactViewModel.js"></script>
     <script src="js/ViewModels/SkillsViewModel.js"></script>
+    <script src="js/ViewModels/CertificationViewModel.js"></script>
     <script src="js/app.js"></script>
     <!-- endbuild -->
 </body>
