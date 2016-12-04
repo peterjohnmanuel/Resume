@@ -33,8 +33,8 @@ var skill19 = new Skill('img/rwd_logo.png', 'Responsive Web Design');
 var skill20 = new Skill('img/sass_logo.png', 'Sass');
 var skill21 = new Skill('img/ubuntu_logo.png', 'Ubuntu');
 var skill22 = new Skill('img/visual_studio_logo.png', 'Visual Studio');
+var skill23 = new Skill('img/windows_logo.png', 'Windows');
 
 var allSkills = [ skill1, skill2 , skill3, skill4, skill5, skill6, skill7, skill8, skill9, skill10, skill11, skill12, skill13, skill14, skill15, skill16 , skill17, skill8, skill19, 
-skill20, skill21, skill22
-     
+skill20, skill21, skill22, skill23     
 ];

@@ -24,7 +24,7 @@
                 <section id="skill" class="col-md-6">
                     <h2>
                         <p class="heading-block-icon">
-                            <i class="fa fa-briefcase fa-inverse fa-fw"></i>
+                            <em class="fa fa-briefcase fa-inverse fa-fw"></em>
                         </p>
                         Career Summary
                         <hr/>
@@ -60,23 +60,26 @@
             <article id="occupation">
                 <h2>
                     <p class="heading-block-icon">
-                        <i class="fa fa-briefcase fa-inverse fa-fw"></i>
+                        <em class="fa fa-briefcase fa-inverse fa-fw"></em>
                     </p>
                     Experience
                     <hr/>
                 </h2>
-                <section class="occupation" data-bind="foreach: occupations">
-                    <h4 class="sub-heading">
-                        <span data-bind="text: employer"></span> -
-                        <span data-bind="text: title"></span>
-                    </h4>
-                    <section class="occupation-date" data-bind="text: employmentDate"></section>
-                </section>
+                <ul class="fa-ul" data-bind="foreach: occupations">
+                    <li class="entry">
+                        <em class="fa-li fa fa-play theme-li"></em>
+                        <h4>
+                            <span data-bind="text: employer"></span> -
+                            <span data-bind="text: title"></span>
+                        </h4>
+                        <section class="occupation-date" data-bind="text: employmentDate"></section>
+                    </li>
+                </ul>
             </article>
             <article id="education">
                 <h2>
                     <div class="heading-block-icon">
-                        <i class="fa fa-graduation-cap fa-inverse fa-fw"></i>
+                        <em class="fa fa-graduation-cap fa-inverse fa-fw"></em>
                     </div>
                     Education
                     <hr/>
@@ -86,32 +89,38 @@
                         <i class="fa fa-university "> </i> School/University
                     </h3>
                 </section>
-                <section data-bind="foreach: educations">
-                    <h5 class="sub-heading">
-                        <span data-bind="text: institution"></span> -
-                        <span data-bind="text: course"></span>
-                    </h5>
-                    <section class="occupation-date" data-bind="text: year"></section>
-                    <section class="" data-bind="text: place"></section>
-                    <section class="" data-bind="text: major"></section>
-                </section>
+                <ul class="fa-ul" data-bind="foreach: educations">
+                    <li class="entry">
+                        <em class="fa-li fa fa-play theme-li"></em>
+                        <h4>
+                            <span data-bind="text: institution"></span> - <span data-bind="text: course"></span>
+                            <section class="occupation-date" data-bind="text: year"></section>
+                        </h4>
+                        <section data-bind="text: place"></section>
+                        <section data-bind="text: major"></section>
+                    </li>
+                </ul>
                 <section id="school-online">
                     <h3 class="section-heading">
-                        <i class="fa fa-book"> </i> Online Courses
+                        <em class="fa fa-book"> </em> Online Courses
                     </h3>
                 </section>
-                <section data-bind="foreach: onlineEducations">
-                    <h5 class="sub-heading">
-                        <span data-bind="text: institution"></span> -
-                        <span data-bind="text: course"></span>
-                    </h5>
-                    <section class="occupation-date" data-bind="text: year"></section>
-                </section>
+                <ul class="fa-ul" data-bind="foreach: onlineEducations">
+                    <li class="entry">
+                        <em class="fa-li fa fa-play theme-li"></em>
+                        <h4>
+                            <span data-bind="text: institution"></span> - <span data-bind="text: course"></span>
+                            <section class="occupation-date" data-bind="text: year"></section>
+                        </h4>
+                        <section data-bind="text: place"></section>
+                        <section data-bind="text: major"></section>
+                    </li>
+                </ul>
             </article>
             <article id="certfications">
                 <h2>
                     <section class="heading-block-icon">
-                        <i class="fa fa-certificate fa-inverse fa-fw"></i>
+                        <em class="fa fa-certificate fa-inverse fa-fw"></em>
                     </section>
                     Certifications
                     <hr/>
@@ -120,19 +129,19 @@
             <article id="skill-set">
                 <h2>
                     <section class="heading-block-icon">
-                        <i class="fa fa-certificate fa-inverse fa-fw"></i>
+                        <em class="fa fa-wrench fa-inverse fa-fw"></em>
                     </section>
                     Summarized Skill Set
                     <hr/>
                 </h2>
-                <small>Please note this is just a summary of my skill set.</small>
                 <section data-bind="foreach: skills">
-
                     <picture>
-                        <source data-bind="attr : { srcset: img, alt: alternative, title: alternative}" >
+                        <source data-bind="attr : { srcset: img, alt: alternative, title: alternative}">
                         <img data-bind="attr : { src: img, alt: alternative, title: alternative}">
                     </picture>
-
+                </section>
+                <section class="summarized-skill-note">
+                    <small>Please note this is just a summary of my skill set.</small>
                 </section>
             </article>
         </section>
