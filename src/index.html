@@ -15,34 +15,36 @@
         <header>
             <section id="bio" class="bio">
                 <h1 class="main-title" data-bind="text: name"></h1>
-                    <h3 class="title"> < <p class="sub-title" data-bind="text: title"></p> /> </h3>                                
+                <h3 class="title">
+                    < <p class="sub-title" data-bind="text: title"></p> /> </h3>
             </section>
         </header>
         <section class="container">
             <article class="row">
                 <section id="skill" class="col-md-6">
-                <h2>
-                    <p class="heading-block-icon">
-                        <i class="fa fa-briefcase fa-inverse fa-fw"></i>
+                    <h2>
+                        <p class="heading-block-icon">
+                            <i class="fa fa-briefcase fa-inverse fa-fw"></i>
+                        </p>
+                        Career Summary
+                        <hr/>
+                    </h2>
+                    <p>
+                        I'm a software developer with more than 4 years experiance over various development platforms. Primarily in the .net stack
+                        I enjoy experimenting and learning new ways to develop software. Over the years I have gained experienced
+                        in front end and back end development and continue to learn on a daily basis. In years passed I have
+                        gained expereince with C#.net WCF, SQL server and various other technologies. In my spare time I
+                        like to experiment with micro-controllers such as arduino and raspberry pi, play games and study.
                     </p>
-                    Career Summary
-                    <hr/>
-                </h2>   
-                <p>
-I'm a software developer with more than 4 years experiance over various development platforms. Primarily in the .net stack I enjoy experimenting and learning new ways to develop software. Over the years I have gained experienced in front end and back end development and continue to learn on a daily basis. In years passed I have gained expereince with C#.net WCF, SQL server and various other technologies. In my spare time I like to experiment with micro-controllers such as arduino and raspberry pi, play games and study. 
-                </p>                                     
-
                 </section>
                 <section id="contact" class="col-md-6">
-
-                <h2>
-                    <p class="heading-block-icon">
-                        <i class="fa fa-phone-square fa-inverse fa-fw"></i>
-                    </p>
-                    Contact Information
-                    <hr/>
-                </h2>   
-
+                    <h2>
+                        <p class="heading-block-icon">
+                            <i class="fa fa-phone-square fa-inverse fa-fw"></i>
+                        </p>
+                        Contact Information
+                        <hr/>
+                    </h2>
                     <section data-bind="foreach: contacts">
                         <dl>
                             <dt>
@@ -106,7 +108,6 @@ I'm a software developer with more than 4 years experiance over various developm
                     <section class="occupation-date" data-bind="text: year"></section>
                 </section>
             </article>
-
             <article id="certfications">
                 <h2>
                     <section class="heading-block-icon">
@@ -116,29 +117,24 @@ I'm a software developer with more than 4 years experiance over various developm
                     <hr/>
                 </h2>
             </article>
-
             <article id="skill-set">
                 <h2>
                     <section class="heading-block-icon">
                         <i class="fa fa-certificate fa-inverse fa-fw"></i>
                     </section>
                     Summarized Skill Set
-                    <hr/>                    
+                    <hr/>
                 </h2>
                 <small>Please note this is just a summary of my skill set.</small>
+                <section data-bind="foreach: skills">
 
-                <section data-bind="foreach: educations">
-                    <h5 class="sub-heading">
-                        <span data-bind="text: institution"></span> -
-                        <span data-bind="text: course"></span>
-                    </h5>
-                    <section class="occupation-date" data-bind="text: year"></section>
-                    <section class="" data-bind="text: place"></section>
-                    <section class="" data-bind="text: major"></section>
+                    <picture>
+                        <source data-bind="attr : { srcset: img, alt: alternative, title: alternative}" >
+                        <img data-bind="attr : { src: img, alt: alternative, title: alternative}">
+                    </picture>
+
                 </section>
-
-            </article>      
-
+            </article>
         </section>
         <footer>
             Peter John Manuel Online Resume
