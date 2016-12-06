@@ -5,6 +5,7 @@
  * @param course
  * @param year
  * @param place
+ * @param major
  * */
 
 function Education(institution, course, year, place, major) {
@@ -18,7 +19,7 @@ function Education(institution, course, year, place, major) {
 }
 
 var education1 = new Education('Oude Molen Technical High School', 'National Senior Certificate', 2009, 'Cape Town, RSA', 'Electrical Technology');
-var education2 = new Education('Cape Peninsula University of Technology', 'NDip IT: Naitonal Diploma Information Technology', 2012, 'Cape Town, RSA', 'Software Development');
+var education2 = new Education('Cape Peninsula University of Technology', 'NDip IT: National Diploma Information Technology', 2012, 'Cape Town, RSA', 'Software Development');
 var education3 = new Education('Cape Peninsula University of Technology', 'BTech IT: Baccalaureus Technologiae Information Technology', 2014, 'Cape Town, RSA', 'Software Development');
 
 

@@ -1,13 +1,13 @@
 /** Bio Information 
  * @class Bio
+ * @param name
+ * @param title
 */
 
-function Bio(name, title, image) {
+function Bio(name, title) {
     var self = this;
-
     self.name = name;
     self.title = title;
-    self.image = image;
 }
 
-var bioInfo = new Bio('Peter John Manuel', 'Software Developer', 'img/fry.jpg');
+var bioInfo = new Bio('Peter John Manuel', 'Software Developer');
