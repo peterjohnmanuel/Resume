@@ -11,6 +11,7 @@ function Skill(img, alternative) {
     self.alternative = alternative;
 }
 
+var skill24 = new Skill('img/apache_logo.png', 'Apache');
 var skill1 = new Skill('img/arduino_logo.png', 'Arduino');
 var skill2 = new Skill('img/bootstrap_logo.png', 'Bootstrap');
 var skill3 = new Skill('img/bower_logo.png', 'Bower');
@@ -35,6 +36,6 @@ var skill21 = new Skill('img/ubuntu_logo.png', 'Ubuntu');
 var skill22 = new Skill('img/visual_studio_logo.png', 'Visual Studio');
 var skill23 = new Skill('img/windows_logo.png', 'Windows');
 
-var allSkills = [ skill1, skill2 , skill3, skill4, skill5, skill6, skill7, skill8, skill9, skill10, skill11, skill12, skill13, skill14, skill15, skill16 , skill17, skill18, skill19, 
+var allSkills = [ skill24,skill1, skill2 , skill3, skill4, skill5, skill6, skill7, skill8, skill9, skill10, skill11, skill12, skill13, skill14, skill15, skill16 , skill17, skill18, skill19, 
 skill20, skill21, skill22, skill23     
 ];
