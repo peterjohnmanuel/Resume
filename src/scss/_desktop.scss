@@ -4,11 +4,16 @@ $dateColor: #42a5f5;
 @media only screen and (min-device-width: 1200px) {
     header {
         align-content: center;
-        text-align: center;
         padding-top: 20px;
         padding-bottom: 20px;
         background: $themeColor;
         color: #ffffff;
+        a {
+            color: #ffffff;
+        }
+        a:hover {
+            color: #808080;
+        }
     }
     // Horizontal line under main heading
     hr {

@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <title>Resume</title>
     <!--build:css css/app.min.css-->
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -11,162 +11,162 @@
 </head>
 
 <body>
-    <div id="main">
-        <header>
-            <section id="bio" class="bio">
-                <h1 class="main-title" data-bind="text: name"></h1>
-                <h3 class="title">
-                    < <p class="sub-title" data-bind="text: title"></p> /> </h3>
-            </section>
-        </header>
-        <section class="container">
-            <article class="row">
-                <section id="skill" class="col-md-6">
-                    <h2>
-                        <p class="heading-block-icon">
-                            <em class="fa fa-briefcase fa-inverse fa-fw"></em>
-                        </p>
-                        Career Summary
-                        <hr/>
-                    </h2>
-                    <p>
-                        Welcome to my online resume. I'm a passionate software developer with more than 4 years experience over various development
-                        platforms. Primarily in the .net stack, I enjoy experimenting and learning new ways to develop, build
-                        and enhance software. Over the years I have gained experienced in front end and back end development
-                        and continue to learn new techniques on a daily basis. In years passed I have gained experience mainly
-                        with C#.net, WCF and SQL server but have experience with other various technology's. In my spare time
-                        I like to experiment with electronics e.g. micro-controllers such as Arduino and raspberry pi, sensors,
-                        RFID and other electronic equipment. I also enjoy playing games and studying.
-                    </p>
-                </section>
-                <section id="contact" class="col-md-6">
-                    <h2>
-                        <p class="heading-block-icon">
-                            <i class="fa fa-phone-square fa-inverse fa-fw"></i>
-                        </p>
-                        Contact Information
-                        <hr/>
-                    </h2>
-                    <section data-bind="foreach: contacts">
-                        <dl>
-                            <dt>
-                                <em class="fa" data-bind="css: contactIcon "></em>
-                                <span class="contact-text" data-bind="text: contactType"></span>
-                            </dt>
-                            <dd>
-                                <!-- ko if: isHyperlink -->
-                                <a data-bind="attr: { href : contactDetails}, text: contactDetails"></a>
-                                <!-- /ko -->
-                                <!-- ko ifnot: isHyperlink -->
-                                <span data-bind="text: contactDetails"></span>
-                                <!-- /ko -->
-                            </dd>
-                        </dl>
-                    </section>
-                </section>
-            </article>
-            <article id="occupation">
-                <h2>
-                    <p class="heading-block-icon">
-                        <em class="fa fa-briefcase fa-inverse fa-fw"></em>
-                    </p>
-                    Experience
-                    <hr/>
-                </h2>
-                <ul class="fa-ul" data-bind="foreach: occupations">
-                    <li class="entry">
-                        <em class="fa-li fa fa-play theme-li"></em>
-                        <h4>
-                            <span data-bind="text: employer"></span> -
-                            <span data-bind="text: title"></span>
-                        </h4>
-                        <section class="occupation-date" data-bind="text: employmentDate"></section>
-                    </li>
-                </ul>
-            </article>
-            <article id="education">
-                <h2>
-                    <div class="heading-block-icon">
-                        <em class="fa fa-graduation-cap fa-inverse fa-fw"></em>
-                    </div>
-                    Education
-                    <hr/>
-                </h2>
-                <section id="school-education">
-                    <h3 class="section-heading">
-                        <i class="fa fa-university "> </i> School/University
-                    </h3>
-                </section>
-                <ul class="fa-ul" data-bind="foreach: educations">
-                    <li class="entry">
-                        <em class="fa-li fa fa-play theme-li"></em>
-                        <h4>
-                            <span data-bind="text: institution"></span> - <span data-bind="text: course"></span>
-                            <section class="occupation-date" data-bind="text: year"></section>
-                        </h4>
-                        <section data-bind="text: place"></section>
-                        <section data-bind="text: major"></section>
-                    </li>
-                </ul>
-                <section id="school-online">
-                    <h3 class="section-heading">
-                        <em class="fa fa-book"> </em> Online Courses
-                    </h3>
-                </section>
-                <ul class="fa-ul" data-bind="foreach: onlineEducations">
-                    <li class="entry">
-                        <em class="fa-li fa fa-play theme-li"></em>
-                        <h4>
-                            <span data-bind="text: institution"></span> - <span data-bind="text: course"></span>
-                            <section class="occupation-date" data-bind="text: year"></section>
-                        </h4>
-                        <section data-bind="text: place"></section>
-                        <section data-bind="text: major"></section>
-                    </li>
-                </ul>
-            </article>
-            <article id="certfications">
-                <h2>
-                    <section class="heading-block-icon">
-                        <em class="fa fa-certificate fa-inverse fa-fw"></em>
-                    </section>
-                    Certifications
-                    <hr/>
-                </h2>
 
-                <ul class="fa-ul" data-bind="foreach: certifications">
-                    <li class="entry">
-                        <em class="fa-li fa fa-play theme-li"></em>
-                        <h4>
-                            <span data-bind="text: certDescription"></span>
-                            <section class="occupation-date" data-bind="text: year"></section>
-                        </h4>
-                    </li>
-                </ul>
-            </article>
-            <article id="skill-set">
-                <h2>
-                    <section class="heading-block-icon">
-                        <em class="fa fa-wrench fa-inverse fa-fw"></em>
-                    </section>
-                    Summarized Skill Set
-                    <hr/>
-                </h2>
-                <section data-bind="foreach: skills">
-                    <picture>
-                        <source data-bind="attr : { srcset: img, alt: alternative, title: alternative}">
-                        <img data-bind="attr : { src: img, alt: alternative, title: alternative}">
-                    </picture>
-                </section>
-                <section class="summarized-skill-note">
-                    <small>Please note this is just a summary of my skill set.</small>
-                </section>
-            </article>
+    <header>
+
+        <section class="container">
+
+            <section class="row">
+                <article id="bio" class="col-lg-6 col-md-6">
+                    <hgroup>
+                        <h1 data-bind="text: name"></h1>
+                        <h3 data-bind="text: title"></h3>
+                        <h5>BTech, ND, MCP</h5>
+                    </hgroup>
+                </article>
+
+                <article id="contacts" class="col-lg-6 col-md-6" data-bind="foreach: contacts">
+                    <dl class="contact">
+                        <dt>
+                            <em class="fa" data-bind="css: contactIcon "></em>
+                            <span class="contact-text" data-bind="text: contactType"></span>
+                        </dt>
+                        <dd>
+                            <!-- ko if: isHyperlink -->
+                            <a data-bind="attr: { href : contactDetails}, text: contactDetails"></a>
+                            <!-- /ko -->
+                            <!-- ko ifnot: isHyperlink -->
+                            <span data-bind="text: contactDetails"></span>
+                            <!-- /ko -->
+                        </dd>
+                    </dl>
+                </article>
+
+            </section>
+
+            <p class="welcome-message">
+                Welcome to my online resume.I'm a passionate software developer with more than 4 years experience over various development platforms. Primarily in the .net stack, I enjoy experimenting and learning new ways to develop, build and enhance software. Over
+                the years I have gained experienced in front end and back end development and continue to learn new techniques on a daily basis. In years passed I have gained experience mainly with C#.net, WCF and SQL server but have experience with other
+                various technology's. In my spare time I like to experiment with electronics e.g. micro-controllers such as Arduino and raspberry pi, sensors, RFID and other electronic equipment. I also enjoy playing games and studying.
+            </p>
+
         </section>
-        <footer>
-            Peter John Manuel Online Resume
-        </footer>
-    </div>
+
+    </header>
+    <section class="container">
+        <article id="occupation">
+            <h2>
+                <p class="heading-block-icon">
+                    <em class="fa fa-briefcase fa-inverse fa-fw"></em>
+                </p>
+                Experience
+                <hr/>
+            </h2>
+            <ul class="fa-ul" data-bind="foreach: occupations">
+                <li class="entry">
+                    <em class="fa-li fa fa-play theme-li"></em>
+                    <h4>
+                        <span data-bind="text: employer"></span> -
+                        <span data-bind="text: title"></span>
+                    </h4>
+                    <section class="occupation-date" data-bind="text: employmentDate"></section>
+                </li>
+            </ul>
+        </article>
+        <article id="education">
+            <h2>
+                <div class="heading-block-icon">
+                    <em class="fa fa-graduation-cap fa-inverse fa-fw"></em>
+                </div>
+                Education
+                <hr/>
+            </h2>
+            <section id="school-education">
+                <h3 class="section-heading">
+                    <i class="fa fa-university "> </i> School/University
+                </h3>
+            </section>
+            <ul class="fa-ul" data-bind="foreach: educations">
+                <li class="entry">
+                    <em class="fa-li fa fa-play theme-li"></em>
+                    <h4>
+                        <span data-bind="text: institution"></span> - <span data-bind="text: course"></span>
+                        <section class="occupation-date" data-bind="text: year"></section>
+                    </h4>
+                    <section data-bind="text: place"></section>
+                    <section data-bind="text: major"></section>
+                </li>
+            </ul>
+            <section id="school-online">
+                <h3 class="section-heading">
+                    <em class="fa fa-book"> </em> Online Courses
+                </h3>
+            </section>
+            <ul class="fa-ul" data-bind="foreach: onlineEducations">
+                <li class="entry">
+                    <em class="fa-li fa fa-play theme-li"></em>
+                    <h4>
+                        <span data-bind="text: institution"></span> - <span data-bind="text: course"></span>
+                        <section class="occupation-date" data-bind="text: year"></section>
+                    </h4>
+                    <section data-bind="text: place"></section>
+                    <section data-bind="text: major"></section>
+                </li>
+            </ul>
+        </article>
+        <article id="certfications">
+            <h2>
+                <section class="heading-block-icon">
+                    <em class="fa fa-certificate fa-inverse fa-fw"></em>
+                </section>
+                Certifications
+                <hr/>
+            </h2>
+
+            <ul class="fa-ul" data-bind="foreach: certifications">
+                <li class="entry">
+                    <em class="fa-li fa fa-play theme-li"></em>
+                    <h4>
+                        <span data-bind="text: certDescription"></span>
+                        <section class="occupation-date" data-bind="text: year"></section>
+                    </h4>
+                </li>
+            </ul>
+        </article>
+        <article id="skill-set">
+            <h2>
+                <section class="heading-block-icon">
+                    <em class="fa fa-wrench fa-inverse fa-fw"></em>
+                </section>
+                Summarized Skill Set
+                <hr/>
+            </h2>
+            <section data-bind="foreach: skills">
+
+                <section class="row">
+                    <article class="col-lg-1 col-md-1 col-sm-1">
+                        <picture class="pic-inline">
+                            <source data-bind="attr : { srcset: img, alt: alternative, title: alternative}">
+                            <img data-bind="attr : { src: img, alt: alternative, title: alternative}">
+                        </picture>
+
+                    </article>
+                    <article class="col-lg-2 col-md-2 col-sm-2">
+                        <h6 data-bind="text: alternative"></h6>
+
+                    </article>
+                </section>
+
+            </section>
+            <section class="summarized-skill-note">
+                <small>Please note this is just a summary of my skill set.</small>
+            </section>
+        </article>
+    </section>
+    <footer>
+        Peter John Manuel Online Resume
+    </footer>
+
     <!--build:js js/app.min.js -->
     <script src="js/jQuery.js"></script>
     <script src="js/bootstrap.min.js"></script>

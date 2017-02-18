@@ -55,4 +55,37 @@ $dateColor: #ef5350;
         display: inline-block;
         margin: 0px;
     }
+    .contact {
+        dt {
+            float: left;
+            clear: left;
+            text-align: left;
+        }
+        dd {
+            margin-left: 0px;
+            word-wrap: break-word;
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (min-device-width: 300px) and (max-device-width: 775px) and (orientation: landscape) {
+    #contacts {
+        margin-top: 1em;
+    }
+    .contact {
+        margin-left: 12em;
+        dt {
+            float: left;
+            clear: left;
+            text-align: left;
+            width: 20%;
+        }
+        dd {
+            margin-left: 0px;
+            word-wrap: break-word;
+            text-align: left;
+            width: 80%;
+        }
+    }
 }

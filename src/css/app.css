@@ -6274,11 +6274,14 @@ button.close {
 @media only screen and (min-device-width: 1200px) {
   header {
     align-content: center;
-    text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
     background: #1565c0;
     color: #ffffff; }
+    header a {
+      color: #ffffff; }
+    header a:hover {
+      color: #808080; }
   hr {
     background-color: #1565c0;
     border: none;
@@ -6401,57 +6404,131 @@ button.close {
     height: 45px;
     padding: 7px;
     display: inline-block;
-    margin: 0px; } }
+    margin: 0px; }
+  .contact dt {
+    float: left;
+    clear: left;
+    text-align: left; }
+  .contact dd {
+    margin-left: 0px;
+    word-wrap: break-word;
+    text-align: left; } }
+
+@media screen and (min-device-width: 300px) and (max-device-width: 775px) and (orientation: landscape) {
+  #contacts {
+    margin-top: 1em; }
+  .contact {
+    margin-left: 12em; }
+    .contact dt {
+      float: left;
+      clear: left;
+      text-align: left;
+      width: 20%; }
+    .contact dd {
+      margin-left: 0px;
+      word-wrap: break-word;
+      text-align: left;
+      width: 80%; } }
+
+header {
+  margin-bottom: 2em;
+  line-height: 150%; }
+  header p::first-letter {
+    text-transform: capitalize;
+    font-size: 4em;
+    margin: 0px;
+    padding: 0px; }
+  header h1,
+  header h2,
+  header h3,
+  header h4,
+  header h5,
+  header h6 {
+    padding: 0px;
+    margin: 0px; }
 
 body {
   background: #212121;
-  color: #ffffff; }
-
-.sub-title {
+  color: #ffffff;
   margin: 0px;
-  display: inline-block;
-  font-style: italic; }
+  padding: 0px; }
 
-.main-entry {
-  margin: 0px; }
+#bio {
+  margin-top: 1.5em; }
 
-.entry {
-  margin-top: 30px;
-  margin-bottom: 30px; }
-  .entry h4 {
-    margin: 0px; }
+#contacts {
+  margin-top: 1em; }
 
-.occupation {
-  margin-top: 20px;
-  margin-bottom: 20px; }
-
-.title {
-  margin: 0px; }
-
-.occupation-description {
-  margin-top: 10px; }
-
-.occupation-project-heading {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-weight: bold; }
-
-dt {
+.contact dt {
   float: left;
   width: 30%; }
 
-dd {
+.contact dd {
   float: left;
   width: 70%; }
 
-ul {
-  list-style: none;
-  padding: 0px; }
+.welcome-message {
+  margin-top: 2em;
+  justify-content: space-between; }
+
+.pic-inline {
+  display: inline; }
+
+/*
+
+
+
+body {
+    background: #212121;
+    color: #ffffff;
+}
+
+.sub-title {
+    margin: 0px;
+    display: inline-block;
+    font-style: italic;
+}
+
+.main-entry {
+    margin: 0px;
+}
+
+.entry {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    h4 {
+        margin: 0px;
+    }
+}
+
+// Occupation
+.occupation {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title {
+    margin: 0px;
+}
+
+// Occupation Description
+.occupation-description {
+    margin-top: 10px;
+}
+
+// Occupation Project Heading
+.occupation-project-heading {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
 
 .main-title {
-  margin: 0px; }
+    margin: 0px;
+}
 
 .summarized-skill-note {
-  text-align: center;
-  font-size: medium;
-  margin-top: 2px; }
+    text-align: center;
+    font-size: medium;
+    margin-top: 2px;
+}*/

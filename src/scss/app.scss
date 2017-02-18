@@ -3,6 +3,69 @@
 @import "desktop";
 @import "tablet";
 @import "mobile";
+header {
+    margin-bottom: 2em;
+    p::first-letter {
+        text-transform: capitalize;
+        font-size: 4em;
+        margin: 0px;
+        padding: 0px;
+    }
+    line-height: 150%;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+body {
+    background: #212121;
+    color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+}
+
+#bio {
+    margin-top: 1.5em;
+}
+
+// contact section
+#contacts {
+    margin-top: 1em;
+}
+
+// Contact Details
+.contact {
+    dt {
+        float: left;
+        width: 30%;
+    }
+    dd {
+        float: left;
+        width: 70%;
+    }
+}
+
+// Welcome Message
+.welcome-message {
+    margin-top: 2em;
+    justify-content: space-between;
+}
+
+// Inline picture
+.pic-inline {
+    display: inline;
+}
+
+
+/*
+
+
 
 body {
     background: #212121;
@@ -49,23 +112,6 @@ body {
     font-weight: bold;
 }
 
-// Contact Information dt
-dt {
-    float: left;
-    width: 30%;
-}
-
-// Contact Information dd
-dd {
-    float: left;
-    width: 70%;
-}
-
-ul {
-    list-style: none;
-    padding: 0px;
-}
-
 .main-title {
     margin: 0px;
 }
@@ -74,4 +120,4 @@ ul {
     text-align: center;
     font-size: medium;
     margin-top: 2px;
-}
+}*/
