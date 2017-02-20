@@ -6277,7 +6277,8 @@ button.close {
     padding-top: 20px;
     padding-bottom: 20px;
     background: #1565c0;
-    color: #ffffff; }
+    color: #ffffff;
+    height: 100vh; }
     header a {
       color: #ffffff; }
     header a:hover {
@@ -6325,7 +6326,8 @@ button.close {
     padding-top: 20px;
     padding-bottom: 20px;
     background: #43a047;
-    color: #ffffff; }
+    color: #ffffff;
+    height: 100vh; }
   hr {
     background-color: #43a047;
     border: none;
