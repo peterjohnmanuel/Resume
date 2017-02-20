@@ -6317,12 +6317,28 @@ button.close {
     height: 45px;
     padding: 7px;
     display: inline-block;
-    margin: 0px; } }
+    margin: 0px; }
+  .welcome-message-outer {
+    position: absolute;
+    bottom: 0; }
+  .welcome-message {
+    margin-top: 2em;
+    margin-bottom: 4em;
+    justify-content: space-between;
+    position: absolute;
+    font-size: 1.5em;
+    bottom: 0; }
+  .logo {
+    margin-top: 18em;
+    margin-left: 5em; }
+  .font-logo {
+    margin-top: 1em;
+    font-size: 2em;
+    text-transform: capitalize;
+    align-content: center; } }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   header {
-    align-content: center;
-    text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
     background: #43a047;
@@ -6362,7 +6378,86 @@ button.close {
     height: 45px;
     padding: 7px;
     display: inline-block;
-    margin: 0px; } }
+    margin: 0px; }
+  .welcome-message-outer {
+    position: absolute;
+    bottom: 0; }
+  .welcome-message {
+    margin-top: 2em;
+    margin-bottom: 4em;
+    justify-content: space-between;
+    position: absolute;
+    font-size: 1.5em;
+    bottom: 0; }
+  .logo {
+    margin-top: 8em;
+    margin-left: 6em; }
+  .font-logo {
+    margin-top: 1em;
+    font-size: 2em;
+    text-transform: capitalize;
+    align-content: center; } }
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+  header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #43a047;
+    color: #ffffff;
+    height: 100vh; }
+  hr {
+    background-color: #43a047;
+    border: none;
+    height: 2px;
+    margin-top: 0;
+    width: 100%; }
+  footer {
+    position: absoulte;
+    bottom: 0;
+    width: 100%;
+    background-color: #43a047;
+    color: white;
+    font-weight: bold;
+    margin-top: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center; }
+  .theme-li {
+    color: #43a047; }
+  .sub-heading {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: #43a047; }
+  .occupation-date {
+    font-style: italic;
+    font-size: 14px;
+    color: #43a047;
+    line-height: 16px; }
+  .heading-block-icon {
+    background: #43a047;
+    width: 50px;
+    height: 45px;
+    padding: 7px;
+    display: inline-block;
+    margin: 0px; }
+  .welcome-message-outer {
+    position: absolute;
+    bottom: 0; }
+  .welcome-message {
+    margin-top: 2em;
+    margin-bottom: 4em;
+    justify-content: space-between;
+    position: absolute;
+    font-size: 1.5em;
+    bottom: 0; }
+  .logo {
+    margin-top: 25em;
+    margin-left: 6em; }
+  .font-logo {
+    margin-top: 1em;
+    font-size: 2em;
+    text-transform: capitalize;
+    align-content: center; } }
 
 @media only screen and (min-device-width: 300px) and (max-device-width: 775px) {
   header {
@@ -6430,13 +6525,26 @@ button.close {
   .progress {
     margin-top: 20px; }
   .td-progress-bar {
-    vertical-align: middle !important; } }
+    vertical-align: middle !important; }
+  .welcome-message {
+    margin-top: 2em;
+    margin-bottom: 4em;
+    justify-content: space-between;
+    font-size: 1.5em;
+    bottom: 0; }
+  .logo {
+    margin-top: 2em; }
+  .font-logo {
+    margin-top: 1em;
+    font-size: 2em;
+    text-transform: capitalize;
+    align-content: center; } }
 
 @media screen and (min-device-width: 300px) and (max-device-width: 775px) and (orientation: landscape) {
   #contacts {
     margin-top: 1em; }
   .contact {
-    margin-left: 12em; }
+    margin-left: 8em; }
     .contact dt {
       float: left;
       clear: left;
@@ -6485,18 +6593,6 @@ body {
 .contact dd {
   float: left;
   width: 70%; }
-
-.welcome-message-outer {
-  position: absolute;
-  bottom: 0; }
-
-.welcome-message {
-  margin-top: 2em;
-  margin-bottom: 4em;
-  justify-content: space-between;
-  position: absolute;
-  font-size: 1.5em;
-  bottom: 0; }
 
 .pic-inline {
   width: 200px;

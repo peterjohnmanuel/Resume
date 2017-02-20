@@ -61,4 +61,27 @@ $dateColor: #42a5f5;
         display: inline-block;
         margin: 0px;
     }
+    // Welcome Message
+    .welcome-message-outer {
+        position: absolute;
+        bottom: 0;
+    }
+    .welcome-message {
+        margin-top: 2em;
+        margin-bottom: 4em;
+        justify-content: space-between;
+        position: absolute;
+        font-size: 1.5em;
+        bottom: 0;
+    }
+    .logo {
+        margin-top: 18em;
+        margin-left: 5em;
+    }
+    .font-logo {
+        margin-top: 1em;
+        font-size: 2em;
+        text-transform: capitalize;
+        align-content: center;
+    }
 }

@@ -91,6 +91,22 @@ $dateColor: #ef5350;
     .td-progress-bar {
         vertical-align: middle !important;
     }
+    .welcome-message {
+        margin-top: 2em;
+        margin-bottom: 4em;
+        justify-content: space-between;
+        font-size: 1.5em;
+        bottom: 0;
+    }
+    .logo {
+        margin-top: 2em;
+    }
+    .font-logo {
+        margin-top: 1em;
+        font-size: 2em;
+        text-transform: capitalize;
+        align-content: center;
+    }
 }
 
 @media screen and (min-device-width: 300px) and (max-device-width: 775px) and (orientation: landscape) {
@@ -98,7 +114,7 @@ $dateColor: #ef5350;
         margin-top: 1em;
     }
     .contact {
-        margin-left: 12em;
+        margin-left: 8em;
         dt {
             float: left;
             clear: left;
