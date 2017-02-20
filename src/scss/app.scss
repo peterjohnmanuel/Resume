@@ -28,6 +28,7 @@ body {
     color: #ffffff;
     margin: 0px;
     padding: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 #bio {
@@ -59,7 +60,9 @@ body {
 
 // Inline picture
 .pic-inline {
-    display: inline;
+    //display: inline;
+    width: 200px;
+    height: 200px;
 }
 
 // Tech Entry
@@ -70,6 +73,41 @@ body {
 
 .vertical-center {
     vertical-align: center;
+}
+
+#skillsMatrix {
+    width: 100%;
+    tr>td:first-child {
+        width: 10%;
+    }
+    tr>td:nth-child(2) {
+        width: 15%;
+    }
+    tr>td:last-child {
+        width: 75%;
+    }
+}
+
+tr {
+    height: 2em;
+}
+
+tr td {
+    padding-top: 1em;
+}
+
+table {
+    border: 0px;
+    border-style: none;
+    border-collapse: collapse
+}
+
+.progress {
+    margin-top: 20px;
+}
+
+.td-progress-bar {
+    vertical-align: middle !important;
 }
 
 

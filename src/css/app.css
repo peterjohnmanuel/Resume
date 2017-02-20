@@ -6412,7 +6412,23 @@ button.close {
   .contact dd {
     margin-left: 0px;
     word-wrap: break-word;
-    text-align: left; } }
+    text-align: left; }
+  #skillsMatrix {
+    width: 100%; }
+    #skillsMatrix tr > td:first-child {
+      width: 20%; }
+    #skillsMatrix tr > td:nth-child(2) {
+      width: 30%; }
+    #skillsMatrix tr > td:last-child {
+      width: 50%; }
+  tr {
+    height: 2em; }
+  tr td {
+    padding-top: 1em; }
+  .progress {
+    margin-top: 20px; }
+  .td-progress-bar {
+    vertical-align: middle !important; } }
 
 @media screen and (min-device-width: 300px) and (max-device-width: 775px) and (orientation: landscape) {
   #contacts {
@@ -6451,7 +6467,8 @@ body {
   background: #212121;
   color: #ffffff;
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  font-family: 'Roboto', sans-serif; }
 
 #bio {
   margin-top: 1.5em; }
@@ -6472,7 +6489,8 @@ body {
   justify-content: space-between; }
 
 .pic-inline {
-  display: inline; }
+  width: 200px;
+  height: 200px; }
 
 .tech-entry {
   margin-top: 2.5em;
@@ -6480,6 +6498,32 @@ body {
 
 .vertical-center {
   vertical-align: center; }
+
+#skillsMatrix {
+  width: 100%; }
+  #skillsMatrix tr > td:first-child {
+    width: 10%; }
+  #skillsMatrix tr > td:nth-child(2) {
+    width: 15%; }
+  #skillsMatrix tr > td:last-child {
+    width: 75%; }
+
+tr {
+  height: 2em; }
+
+tr td {
+  padding-top: 1em; }
+
+table {
+  border: 0px;
+  border-style: none;
+  border-collapse: collapse; }
+
+.progress {
+  margin-top: 20px; }
+
+.td-progress-bar {
+  vertical-align: middle !important; }
 
 /*
 

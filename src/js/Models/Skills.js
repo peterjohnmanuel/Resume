@@ -5,19 +5,19 @@
  * @param alt
  * */
 
-function Skill(img, alternative, skillLevel, skillColor) {
+function Skill(img, name, skillLevel, skillColor) {
     var self = this;
     self.img = img;
-    self.alternative = alternative;
+    self.name = name
     self.skillLevel = skillLevel;
     self.skillColor = skillColor;
 }
 
 
 // Build Management
-var BuildManagementSkill = function(img, alternative, skillLevel, skillColor) {
+var BuildManagementSkill = function(img, name, skillLevel, skillColor) {
     this.SkillType = 'Build Management';
-    Skill.call(this, img, alternative, skillLevel, skillColor);
+    Skill.call(this, img, name, skillLevel, skillColor);
 }
 
 BuildManagementSkill.prototype = Object.create(Skill.prototype);
@@ -28,9 +28,9 @@ var bm2 = new BuildManagementSkill('img/gulp_logo.png', 'Gulp', 40, '#E74C3C');
 var bm3 = new BuildManagementSkill('img/msbuild_logo.png', 'MSBuild', 20, '#154360');
 
 // Collaboration
-var CollaborationSkill = function(img, alternative, skillLevel, skillColor) {
+var CollaborationSkill = function(img, name, skillLevel, skillColor) {
     this.SkillType = 'Collaboration';
-    Skill.call(this, img, alternative, skillLevel, skillColor);
+    Skill.call(this, img, name, skillLevel, skillColor);
 }
 
 CollaborationSkill.prototype = Object.create(Skill.prototype);
@@ -40,9 +40,9 @@ var cb1 = new CollaborationSkill('img/jira_logo.png', 'Jira', 40, '#2874A6');
 
 
 // Compiled Languages
-var CompiledLanguageSkill = function(img, alternative, skillLevel, skillColor) {
+var CompiledLanguageSkill = function(img, name, skillLevel, skillColor) {
     this.SkillType = 'Compiled Languages';
-    Skill.call(this, img, alternative, skillLevel, skillColor);
+    Skill.call(this, img, name, skillLevel, skillColor);
 }
 
 CompiledLanguageSkill.prototype = Object.create(Skill.prototype);
@@ -54,9 +54,9 @@ var compiledSkill3 = new CompiledLanguageSkill('img/java_logo.png', 'Java', 40, 
 var compiledSkill4 = new CompiledLanguageSkill('', 'Vb.net', 20, '#3498DB');
 
 // Continuos Integration
-var ContinuosIntegrationSkill = function(img, alternative, skillLevel, skillColor) {
+var ContinuosIntegrationSkill = function(img, name, skillLevel, skillColor) {
     this.SkillType = 'Continuos Integration';
-    Skill.call(this, img, alternative, skillLevel, skillColor);
+    Skill.call(this, img, name, skillLevel, skillColor);
 }
 
 ContinuosIntegrationSkill.prototype = Object.create(Skill.prototype);
@@ -68,9 +68,9 @@ var ci1 = new ContinuosIntegrationSkill('img/bamboo_logo.png', 'Bamboo', 40, '#2
 
 
 // Design and Development
-var DesignDevelopmentSkill = function(img, alternative, skillLevel, skillColor) {
+var DesignDevelopmentSkill = function(img, name, skillLevel, skillColor) {
     this.SkillType = 'Design and Development';
-    Skill.call(this, img, alternative, skillLevel, skillColor);
+    Skill.call(this, img, name, skillLevel, skillColor);
 }
 
 DesignDevelopmentSkill.prototype = Object.create(Skill.prototype);
@@ -87,9 +87,9 @@ var dds8 = new DesignDevelopmentSkill('', 'Model View View Model (MVVM)', 40, '#
 var dds9 = new DesignDevelopmentSkill('', 'Unified Modeling Language', 60, '#884EA0');
 
 // Database 
-var DatabaseSkill = function(img, alternative, skillLevel, skillColor) {
+var DatabaseSkill = function(img, name, skillLevel, skillColor) {
     this.SkillType = 'Database';
-    Skill.call(this, img, alternative, skillLevel, skillColor);
+    Skill.call(this, img, name, skillLevel, skillColor);
 }
 
 DatabaseSkill.prototype = Object.create(Skill.prototype);
@@ -103,26 +103,26 @@ var databaseSkill5 = new DatabaseSkill('img/sybase_logo.png', 'Sybase ASE', 40, 
 
 
 // Frameworks
-var FrameworkSkill = function(img, alternative, skillLevel, skillColor) {
+var FrameworkSkill = function(img, name, skillLevel, skillColor) {
     this.SkillType = 'Frameworks';
-    Skill.call(this, img, alternative, skillLevel, skillColor);
+    Skill.call(this, img, name, skillLevel, skillColor);
 }
 
 FrameworkSkill.prototype = Object.create(Skill.prototype);
 FrameworkSkill.prototype.constructor = FrameworkSkill;
 
-var fm1 = new FrameworkSkill('', '.net Framework', 60, '#2980B9');
-var fm2 = new FrameworkSkill('', 'ASP.NET', 40, '#9B59B6');
-var fm3 = new FrameworkSkill('', 'Entity Framework (EF)', 40, '#3498DB');
-var fm4 = new FrameworkSkill('', 'N-Hibernate', 40, '#2ECC71');
+var fm1 = new FrameworkSkill('img/microsoft_color_logo.png', '.net Framework', 60, '#2980B9');
+var fm2 = new FrameworkSkill('img/microsoft_color_logo.png', 'ASP.NET', 40, '#9B59B6');
+var fm3 = new FrameworkSkill('img/microsoft_color_logo.png', 'Entity Framework (EF)', 40, '#3498DB');
+var fm4 = new FrameworkSkill('img/nhibernate_logo.png', 'N-Hibernate', 40, '#2ECC71');
 var fm5 = new FrameworkSkill('img/telerik_logo.png', 'Telerik', 40, '#0E6655');
-var fm6 = new FrameworkSkill('', 'Windows Communication Foundation', 60, '#7F8C8D');
+var fm6 = new FrameworkSkill('img/microsoft_color_logo.png', 'Windows Communication Foundation', 60, '#7F8C8D');
 
 
 // Operating Systems
-var OperatingSystemSkill = function(img, alternative, skillLevel, skillColor) {
+var OperatingSystemSkill = function(img, name, skillLevel, skillColor) {
     this.SkillType = 'Operating Systems';
-    Skill.call(this, img, alternative, skillLevel, skillColor);
+    Skill.call(this, img, name, skillLevel, skillColor);
 }
 
 OperatingSystemSkill.prototype = Object.create(Skill.prototype);
@@ -138,9 +138,9 @@ var osSkill7 = new OperatingSystemSkill('img/windows_logo.png', 'Windows Server 
 
 // Source Control Management
 
-var SourceControlSkill = function(img, alternative, skillLevel, skillColor) {
+var SourceControlSkill = function(img, name, skillLevel, skillColor) {
     this.SkillType = 'Source Control Management (SCM)';
-    Skill.call(this, img, alternative, skillLevel, skillColor);
+    Skill.call(this, img, name, skillLevel, skillColor);
 }
 
 SourceControlSkill.prototype = Object.create(Skill.prototype);
@@ -153,9 +153,9 @@ var scm4 = new SourceControlSkill('img/subversion_logo.png', 'Subversion', 60, '
 var scm5 = new SourceControlSkill('img/mercurial_logo.png', 'Mercurial', 40, '#839192');
 
 
-var TestingSkill = function(img, alternative, skillLevel, skillColor) {
+var TestingSkill = function(img, name, skillLevel, skillColor) {
     this.SkillType = 'Testing';
-    Skill.call(this, img, alternative, skillLevel, skillColor);
+    Skill.call(this, img, name, skillLevel, skillColor);
 }
 
 TestingSkill.prototype = Object.create(Skill.prototype);
@@ -165,9 +165,9 @@ var tes1 = new TestingSkill('img/jasmine_logo.png', 'Jasmine', 20, '#6C3483');
 
 
 // Web Development 
-var WebDevelopmentSkill = function(img, alternative, skillLevel, skillColor) {
+var WebDevelopmentSkill = function(img, name, skillLevel, skillColor) {
     this.SkillType = 'Web Development';
-    Skill.call(this, img, alternative, skillLevel, skillColor);
+    Skill.call(this, img, name, skillLevel, skillColor);
 }
 
 var webSkill1 = new WebDevelopmentSkill('img/bootstrap_logo.png', 'Bootstrap', 40, '#8E44AD');
@@ -185,9 +185,9 @@ WebDevelopmentSkill.prototype = Object.create(Skill.prototype);
 WebDevelopmentSkill.prototype.constructor = WebDevelopmentSkill;
 
 // Web Servers 
-var WebServerSkill = function(img, alternative, skillLevel, skillColor) {
+var WebServerSkill = function(img, name, skillLevel, skillColor) {
     this.SkillType = 'Operating Systems';
-    Skill.call(this, img, alternative, skillLevel, skillColor);
+    Skill.call(this, img, name, skillLevel, skillColor);
 }
 
 WebServerSkill.prototype = Object.create(Skill.prototype);

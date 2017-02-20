@@ -67,6 +67,30 @@ $dateColor: #ef5350;
             text-align: left;
         }
     }
+    #skillsMatrix {
+        width: 100%;
+        tr>td:first-child {
+            width: 20%;
+        }
+        tr>td:nth-child(2) {
+            width: 30%;
+        }
+        tr>td:last-child {
+            width: 50%;
+        }
+    }
+    tr {
+        height: 2em;
+    }
+    tr td {
+        padding-top: 1em;
+    }
+    .progress {
+        margin-top: 20px;
+    }
+    .td-progress-bar {
+        vertical-align: middle !important;
+    }
 }
 
 @media screen and (min-device-width: 300px) and (max-device-width: 775px) and (orientation: landscape) {
