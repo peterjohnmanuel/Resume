@@ -6474,6 +6474,13 @@ body {
 .pic-inline {
   display: inline; }
 
+.tech-entry {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em; }
+
+.vertical-center {
+  vertical-align: center; }
+
 /*
 
 
