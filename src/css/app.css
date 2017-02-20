@@ -6486,9 +6486,17 @@ body {
   float: left;
   width: 70%; }
 
+.welcome-message-outer {
+  position: absolute;
+  bottom: 0; }
+
 .welcome-message {
   margin-top: 2em;
-  justify-content: space-between; }
+  margin-bottom: 4em;
+  justify-content: space-between;
+  position: absolute;
+  font-size: 1.5em;
+  bottom: 0; }
 
 .pic-inline {
   width: 200px;
