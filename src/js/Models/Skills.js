@@ -55,7 +55,7 @@ var compiledSkill4 = new CompiledLanguageSkill('', 'Vb.net', 20, '#3498DB');
 
 // Continuos Integration
 var ContinuosIntegrationSkill = function(img, name, skillLevel, skillColor) {
-    this.SkillType = 'Continuos Integration';
+    this.SkillType = 'Continuous Integration';
     Skill.call(this, img, name, skillLevel, skillColor);
 }
 
@@ -194,7 +194,7 @@ WebServerSkill.prototype = Object.create(Skill.prototype);
 WebServerSkill.prototype.constructor = WebServerSkill;
 
 var webServerSkill1 = new WebServerSkill('img/apache_logo.png', 'Apache', 40, '#E74C3C');
-var webServerSkill2 = new WebServerSkill('img/windows_logo.png', 'IIS', 60, '#2ECC71');
+var webServerSkill2 = new WebServerSkill('img/microsoft_color_logo.png', 'IIS', 60, '#2ECC71');
 
 
 var allSkills = [
@@ -224,7 +224,7 @@ var allSkills = [
     },
 
     {
-        name: 'Continuos Integration',
+        name: 'Continuous Integration',
         items: [ci1]
 
     },
