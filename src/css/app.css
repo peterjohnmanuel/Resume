@@ -6578,7 +6578,8 @@ body {
   color: #ffffff;
   margin: 0px;
   padding: 0px;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden; }
 
 #bio {
   margin-top: 1.5em; }

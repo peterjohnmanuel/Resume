@@ -17,4 +17,14 @@
     ko.applyBindings(ski, document.getElementById('skill-set'));
     ko.applyBindings(cert, document.getElementById('certfications'));
 
+    $(document).ready(function() {
+        $('#bio').addClass('animated bounceInLeft');
+        $('#contacts').addClass('animated bounceInRight');
+        $('#eat').addClass('animated bounceInLeft');
+        $('#sleep').addClass('animated bounceInRight');
+        $('#game').addClass('animated bounceInLeft');
+        $('#code').addClass('animated bounceInRight');
+        $('#welcome-message').addClass('animated bounceInUp');
+    });
+
 })();

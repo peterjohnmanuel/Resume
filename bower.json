@@ -1,36 +1,42 @@
 {
-  "name": "resume",
-  "description": "resume project",
-  "main": "index.html",
-  "authors": [
-    "Peter John Manuel"
-  ],
-  "license": "ISC",
-  "homepage": "https://github.com/peterjohnmanuel/Resume",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "devDependencies": {
-    "bootstrap-sass": "^3.3.7",
-    "knockout": "^3.4.0"
-  },
-  "cInstall": {
-    "folder": {
-      "js": "src/js/",
-      "css": "src/css/",
-      "otf, eot, svg, ttf, woff": "src/fonts/"
+    "name": "resume",
+    "description": "resume project",
+    "main": "index.html",
+    "authors": [
+        "Peter John Manuel"
+    ],
+    "license": "ISC",
+    "homepage": "https://github.com/peterjohnmanuel/Resume",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "devDependencies": {
+        "bootstrap-sass": "^3.3.7",
+        "knockout": "^3.4.0"
     },
-    "source": {
-      "bootstrap-sass": {
-        "bootstrap.min.js": "assets/javascripts/bootstrap.min.js"
-      },
-      "knockout": {
-        "knockout.min.js": "dist/knockout.js"
-      }
+    "cInstall": {
+        "folder": {
+            "js": "src/js/",
+            "css": "src/css/",
+            "otf, eot, svg, ttf, woff": "src/fonts/"
+        },
+        "source": {
+            "bootstrap-sass": {
+                "bootstrap.min.js": "assets/javascripts/bootstrap.min.js"
+            },
+            "knockout": {
+                "knockout.min.js": "dist/knockout.js"
+            },
+            "animate.css": {
+                "animate.min.css": "animate.min.css"
+            }
+        }
+    },
+    "dependencies": {
+        "animate.css": "^3.5.2"
     }
-  }
 }
