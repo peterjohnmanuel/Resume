@@ -6279,10 +6279,6 @@ button.close {
     background: #1565c0;
     color: #ffffff;
     height: 100vh; }
-    header a {
-      color: #ffffff; }
-    header a:hover {
-      color: #808080; }
   hr {
     background-color: #1565c0;
     border: none;
@@ -6631,6 +6627,12 @@ table {
 
 .td-progress-bar {
   vertical-align: middle !important; }
+
+a {
+  color: #ffffff; }
+
+a:hover {
+  color: #808080; }
 
 /*
 
