@@ -1,8 +1,13 @@
 /**
  * @class SkillViewModel
  */
-function SkillsViewModel(){
+var SkillsViewModel = (function() {
 
-    var self= this;
-    self.skills = allSkills;
-}
+    'use strict';
+
+    return function() {
+        var self = this;
+        self.skills = allSkills;
+    }
+
+})();

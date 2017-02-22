@@ -2,9 +2,14 @@
  * Contact View Model
  * @class ContactViewModel
  */
-function ContactViewModel(){
 
-    var self = this;
+var ContactViewModel = (function() {
 
-    self.contacts = allContacts;
-}
+    'use strict';
+
+    return function() {
+        var self = this;
+        self.contacts = allContacts;
+    }
+
+})();

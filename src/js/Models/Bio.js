@@ -2,13 +2,16 @@
  * @class Bio
  * @param name
  * @param title
+ * @param qualification
  */
 
-function Bio(name, title, qualification) {
-    var self = this;
-    self.name = name;
-    self.title = title;
-    self.qualification = qualification;
-}
+var Bio = (function() {
+    'use strict';
 
-var bioInfo = new Bio('Peter John Manuel', 'Software Developer', 'BTech, ND, NSC, MCP');
+    return function(name, title, qualification) {
+        var self = this;
+        self.name = name;
+        self.title = title;
+        self.qualification = qualification;
+    }
+})();

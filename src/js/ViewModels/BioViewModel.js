@@ -2,10 +2,15 @@
  * @class BioViewModel
  */
 
-function BioViewModel() {
+var BioViewModel = (function() {
 
-    var self = this;
-    self.name = bioInfo.name;
-    self.title = bioInfo.title;
-    self.qualification = bioInfo.qualification;
-}
+    'use strict';
+
+    return function() {
+
+        var self = this;
+        self.name = bioInfo.name;
+        self.title = bioInfo.title;
+        self.qualification = bioInfo.qualification;
+    }
+})();

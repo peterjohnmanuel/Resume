@@ -2,8 +2,14 @@
  * Occupation View Model
  * @class OccupationViewModel
  **/
-function OccupationViewModel(){
 
-    var self = this;
-    self.occupations = allOccupations;
-}
+var OccupationViewModel = (function() {
+
+    'use strict';
+
+    return function() {
+        var self = this;
+        self.occupations = allOccupations;
+    }
+
+})();

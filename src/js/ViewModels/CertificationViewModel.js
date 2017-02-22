@@ -2,7 +2,14 @@
  * Certification View Model
  * @class CertificationViewModel
  */
-function CertificationViewModel(){
-    var self = this;
-    self.certifications = allCertifications;
-}
+
+var CertificationViewModel = (function() {
+
+    'use strict';
+
+    return function() {
+        var self = this;
+        self.certifications = allCertifications;
+    }
+
+})();
