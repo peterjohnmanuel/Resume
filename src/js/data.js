@@ -103,7 +103,7 @@ var osSkill7 = new OperatingSystemSkill('img/windows_logo.png', 'Windows Server 
 // Source Control
 var scm1 = new SourceControlSkill('img/github_logo.png', 'Github', 20, '#5F6A6A');
 var scm2 = new SourceControlSkill('img/git_logo.png', 'Git', 20, '#E67E22');
-var scm3 = new SourceControlSkill('img/gitlab_logo.png', 'GitLab', 20, '#D0D3D4');
+var scm3 = new SourceControlSkill('img/gitlab_logo.png', 'GitLab', 20, '#F1C40F');
 var scm4 = new SourceControlSkill('img/subversion_logo.png', 'Subversion', 60, '#B7950B');
 var scm5 = new SourceControlSkill('img/mercurial_logo.png', 'Mercurial', 40, '#839192');
 
@@ -112,15 +112,16 @@ var tes1 = new TestingSkill('img/jasmine_logo.png', 'Jasmine', 20, '#6C3483');
 
 // Web Development
 var webSkill1 = new WebDevelopmentSkill('img/bootstrap_logo.png', 'Bootstrap', 40, '#8E44AD');
-var webSkill2 = new WebDevelopmentSkill('img/css3_logo.png', 'CSS3', 40, '#3498DB');
-var webSkill3 = new WebDevelopmentSkill('img/html5_logo.png', 'Html5', 60, '#D35400');
-var webSkill4 = new WebDevelopmentSkill('img/javascript_logo.png', 'Javascript', 40, '#F4D03F');
-var webSkill5 = new WebDevelopmentSkill('img/jquery_logo.png', 'JQuery', 40, '#5499C7');
-var webSkill6 = new WebDevelopmentSkill('img/json_logo.png', 'JSON', 40, '#283747');
-var webSkill7 = new WebDevelopmentSkill('img/knockout_logo.png', 'Knockout JS', 20, '#A93226');
-var webSkill8 = new WebDevelopmentSkill('img/php_logo.png', 'PHP', 40, '#7D3C98');
-var webSkill9 = new WebDevelopmentSkill('img/sass_logo.png', 'Sass', 20, '#f472d0');
-var webSkill10 = new WebDevelopmentSkill('img/xml_logo.png', 'XML', 40, '#1C2833');
+var webSkill2 = new WebDevelopmentSkill('img/bower_logo.png', 'Bower', 20, '#27AE60');
+var webSkill3 = new WebDevelopmentSkill('img/css3_logo.png', 'CSS3', 40, '#3498DB');
+var webSkill4 = new WebDevelopmentSkill('img/html5_logo.png', 'Html5', 60, '#D35400');
+var webSkill5 = new WebDevelopmentSkill('img/javascript_logo.png', 'Javascript', 40, '#F4D03F');
+var webSkill6 = new WebDevelopmentSkill('img/jquery_logo.png', 'JQuery', 40, '#5499C7');
+var webSkill7 = new WebDevelopmentSkill('img/json_logo.png', 'JSON', 40, '#283747');
+var webSkill8 = new WebDevelopmentSkill('img/knockout_logo.png', 'Knockout JS', 20, '#A93226');
+var webSkill9 = new WebDevelopmentSkill('img/php_logo.png', 'PHP', 40, '#7D3C98');
+var webSkill10 = new WebDevelopmentSkill('img/sass_logo.png', 'Sass', 20, '#f472d0');
+var webSkill11 = new WebDevelopmentSkill('img/xml_logo.png', 'XML', 40, '#1C2833');
 
 // Web Server
 var webServerSkill1 = new WebServerSkill('img/apache_logo.png', 'Apache', 40, '#E74C3C');
@@ -240,7 +241,9 @@ var allSkills = [
             webSkill6,
             webSkill7,
             webSkill8,
-            webSkill9
+            webSkill9,
+            webSkill10,
+            webSkill11,
 
         ]
     },
