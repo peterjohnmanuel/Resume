@@ -17,9 +17,10 @@ var contact2 = new Contact('Skype', 'peterjohn.manuel', 'fa-skype', false);
 var contact3 = new Contact('Github', 'https://github.com/peterjohnmanuel', 'fa-github', true);
 var contact4 = new Contact('Location', 'Cape Town, RSA', 'fa-map-o');
 var contact5 = new Contact('Microsoft Profile', 'http://www.mycertprofile.com/Profile/6340282762', 'fa-windows', true);
+var contact6 = new Contact('Last Updated', '22/02/2017', 'fa-calendar', false);
 
 
-var allContacts = [contact1, contact2, contact3, contact4, contact5];
+var allContacts = [contact1, contact2, contact3, contact4, contact5, contact6];
 
 // Education
 
