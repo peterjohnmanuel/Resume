@@ -104,7 +104,7 @@ var osSkill7 = new OperatingSystemSkill('img/windows_logo.png', 'Windows Server 
 var scm1 = new SourceControlSkill('img/github_logo.png', 'Github', 20, '#5F6A6A');
 var scm2 = new SourceControlSkill('img/git_logo.png', 'Git', 20, '#E67E22');
 var scm3 = new SourceControlSkill('img/gitlab_logo.png', 'GitLab', 20, '#F1C40F');
-var scm4 = new SourceControlSkill('img/subversion_logo.png', 'Subversion', 60, '#B7950B');
+var scm4 = new SourceControlSkill('img/subversion_logo.png', 'Subversion', 60, '#5499C7');
 var scm5 = new SourceControlSkill('img/mercurial_logo.png', 'Mercurial', 40, '#839192');
 
 // Testing
