@@ -119,6 +119,21 @@ var FrameworkSkill = (function() {
     FrameworkSkill.prototype.constructor = FrameworkSkill;
 })();
 
+
+var IOTSkill = (function() {
+
+    'use strict';
+
+    return function(img, name, skillLevel, skillColor) {
+        this.SkillType = 'Internet of Things (IOT)';
+        Skill.call(this, img, name, skillLevel, skillColor);
+    }
+
+    IOTSkill.prototype = Object.create(Skill.prototype);
+    IOTSkill.prototype.constructor = IOTSkill;
+})();
+
+
 // Operating Systems
 var OperatingSystemSkill = (function() {
 

@@ -91,6 +91,11 @@ var fm4 = new FrameworkSkill('img/nhibernate_logo.png', 'N-Hibernate', 40, '#2EC
 var fm5 = new FrameworkSkill('img/telerik_logo.png', 'Telerik', 40, '#0E6655');
 var fm6 = new FrameworkSkill('img/microsoft_color_logo.png', 'Windows Communication Foundation', 60, '#7F8C8D');
 
+// IOT 
+
+var iot1 = new IOTSkill('img/arduino_logo.png', 'Arduino', 20, '#3498DB');
+var iot2 = new IOTSkill('img/raspberry_pi_logo.png', 'Raspberry Pi', 20, '#E74C3C');
+
 // Operating Systems
 var osSkill1 = new OperatingSystemSkill('img/raspberry_pi_logo.png', 'Raspbian', 40, '#f472d0');
 var osSkill2 = new OperatingSystemSkill('img/ubuntu_logo.png', 'Ubuntu', 40, '#D35400  ');
@@ -195,6 +200,15 @@ var allSkills = [
             fm4,
             fm5,
             fm6
+        ]
+
+    },
+
+    {
+        name: 'Internet of Things (IOT)',
+        items: [
+            iot1,
+            iot2
         ]
 
     },
