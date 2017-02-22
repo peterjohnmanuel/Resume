@@ -63,7 +63,7 @@ var compiledSkill3 = new CompiledLanguageSkill('img/java_logo.png', 'Java', 40, 
 var compiledSkill4 = new CompiledLanguageSkill('', 'Vb.net', 20, '#3498DB');
 
 // Continuous Integration
-var ci1 = new ContinuousIntegrationSkill('img/bamboo_logo.png', 'Bamboo', 40, '#2874A6');
+var ci1 = new ContinuousIntegrationSkill('img/bamboo_logo.png', 'Bamboo', 20, '#2874A6');
 
 // Design and Development 
 var dds1 = new DesignDevelopmentSkill('', 'Scrum', 60, '#D35400');
@@ -74,7 +74,7 @@ var dds5 = new DesignDevelopmentSkill('', 'Test Driven Development (TDD)', 20, '
 var dds6 = new DesignDevelopmentSkill('', 'SOLID Principle', 60, '#7F8C8D');
 var dds7 = new DesignDevelopmentSkill('', 'Model View Controller (MVC)', 40, '#73C6B6');
 var dds8 = new DesignDevelopmentSkill('', 'Model View View Model (MVVM)', 40, '#E59866');
-var dds9 = new DesignDevelopmentSkill('', 'Unified Modeling Language', 60, '#884EA0');
+var dds9 = new DesignDevelopmentSkill('', 'Unified Modeling Language', 40, '#884EA0');
 
 // Databases
 var databaseSkill1 = new DatabaseSkill('img/access_logo.png', 'MS Access', 20, '#E74C3C');
