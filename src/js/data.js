@@ -13,7 +13,7 @@ var allCertifications = [certification1, certification2, certification3];
 // Contact 
 
 var contact1 = new Contact('Yahoo', 'peterjohn.manuel@yahoo.com', 'fa-yahoo', false);
-var contact2 = new Contact('Skype', 'peterjohn.manuel', 'fa-skype', false);
+var contact2 = new Contact('Skype', 'peterjohnmanuel', 'fa-skype', false);
 var contact3 = new Contact('Github', 'https://github.com/peterjohnmanuel', 'fa-github', true);
 var contact4 = new Contact('Location', 'Cape Town, RSA', 'fa-map-o');
 var contact5 = new Contact('Microsoft Profile', 'http://www.mycertprofile.com/Profile/6340282762', 'fa-windows', true);
